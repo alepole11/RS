@@ -60,19 +60,10 @@
 	CONTACT
 	*******************************************/
 
-		/*I blocchi info e contatti vengono mostrati */
-		#info{
-			width: 50%;
-			float: left;
-		}
-		#contatti{
-			width:40%;
-			float: right; /*per sicurezza su alcuni browser*/
-		}
 
 
 	/******************************************
-	PORTFOLIO
+	SECTION
 	*******************************************/
 
 		#gallery-home li{
@@ -80,6 +71,11 @@
 			margin: 2%;
 			padding: 2% 2% 0 2%;
 		}
+
+	.citazione-home{
+		font-size: 1.6em;
+	}
+
 
 	/******************************************
 	GALLERIA DI TEST
@@ -140,6 +136,29 @@
 		padding-top: 50px;
 	}
 
+	/******************************************
+	BIOGRAFIA
+	*******************************************/
+
+	.foto-profilo{
+		float:left;
+		margin: 0 5% 5% 0;
+	}
+
+	/******************************************
+	CONTATTI
+	*******************************************/
+
+	/*I blocchi info e contatti vengono mostrati */
+	#info{
+		width: 50%;
+		float: left;
+	}
+	#contatti{
+		width:40%;
+		float: right; /*per sicurezza su alcuni browser*/
+	}
+
 }
 
 /******************************************************************* VERSIONE DESKTOP ***********************/
@@ -158,7 +177,7 @@
 
 		.foto-profilo{
 			float:left;
-			margin: 0 5% 50px 0;
+			margin: 0 5% 5% 0;
 		}
 
 
@@ -181,6 +200,24 @@
 	*******************************************/
 
 	/*Nascondo il menu mobile e mostro quello desktop*/
+
+	/******************************************
+	CONTATTI
+	*******************************************/
+
+	/*I blocchi info e contatti vengono mostrati */
+	#info{
+		display: inline-block;
+		width: 50%;
+		float: left;
+	}
+	#contatti{
+		display: inline-block;
+		width:40%;
+		float: right; /*per sicurezza su alcuni browser*/
+	}
+
+
 
 
 
