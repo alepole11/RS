@@ -77,7 +77,7 @@ h2 {
 	cursor: pointer;
 	width: 50px;
 	z-index: 10;
-	position: absolute;
+	/*position: absolute;*/
 }
 
 .icona-menu-attivo{
@@ -85,7 +85,7 @@ h2 {
 	cursor: pointer;
 	width: 50px;
 	z-index: 9;
-	position: absolute;
+	/*position: absolute;*/
 }
 
 
