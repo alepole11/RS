@@ -76,7 +76,7 @@ h2 {
 .icona-menu{
 	cursor: pointer;
 	width: 50px;
-	z-index: 10;
+	z-index: 9;
 	position: absolute;
 }
 
