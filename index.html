@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Rolando Scaccabarozzi</title><!--Titolo sulla TAB del Browser-->
+		<!--<link rel="shortcut icon" type="image/x-icon" href="">Favicon 16px png-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"><!--file di stile predefinito-->
+
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> <!--Font di Google: importante posizionarlo qui!-->
+
+		<link rel="stylesheet" type="text/css" href="css/main.css"> <!--foglio di stile principale-->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css"> <!--foglio di stile responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Fondamentale per il rendering sugli schermi!!!-->
+
+		<!-- JavaScript necessario per il menu-->
+	    <script src="js/jquery-1.7.1.min.js"></script>
+	    
+	    <script>
+	    	$(document).ready(function(){   
+	    
+			//When btn is clicked
+			$(".icona-menu").click(function() {
+				$(".main-menu").toggleClass("show");
+			});  
+	    });
+	    </script>
+
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<!--<div id="container-titolo">-->
+					<a href="index.html" id=logo>
+						<h1>Potere ai Fiori</h1>
+						<h2>di ROLANDO SCACCABAROZZI</h2>
+					</a>
+
+					<!--Menu principale per mobile-->
+					<!--<div class="dropbtn-mob">
+						<img src="img/template/icona-menu.png" class="menu-mobile">
+						  <div class="dropdown-content-mob">
+						  	<ul>
+							    <li><a href="#">Link 1</a></li>
+							    <li><a href="#">Link 2</a></li>
+							    <li><a href="#">Link 3</a></li>
+						    </ul>
+						  </div>
+					</div>-->
+
+				
+				
+				<!--Menu Ale-->
+				
+				<img src="img/template/icona-menu.png" class="icona-menu">
+
+				<!--</div>-->
+			</header>
+				<nav class="main-menu">
+					<ul>
+						<li><a href="#">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
+						<li><a href="#">ESPOSIZIONI</a></li>
+						<li><a href="#">CONTATTI</a></li>
+					</ul>
+				</nav>
+
+			<div id=wrapper> <!--inserito dopo per racchiudere-->
+				<section>
+					<ul id=gallery-home>
+						<li>
+							<a href="dafare.html">
+								<img src="img/home/dipinti-olio-su-tela.jpg" alt="Olio su tela">
+								<p>Olio su Tela</p>
+							</a>
+						</li>
+						<li>
+							<a href="dafare.html">
+								<img src="img/home/tessuti-dipinti-mano.jpg" alt="Decorazioni su Tessuti">
+								<p>Deco su Tessuti</p>
+							</a>
+						</li>
+						<li>
+							<a href="dafare.html">
+								<img src="img/home/ombrelli-dipinti-mano.jpg" alt="Decorazioni su Ombrelli">
+								<p>Deco su Ombrelli</p>
+							</a>
+						</li>
+						<li>
+							<a href="dafare.html">
+								<img src="img/home/allestimenti.jpg" alt="Allestimenti">
+								<p>Allestimenti</p>
+							</a>
+						</li>
+						<li>
+							<a href="dafare.html">
+								<img src="img/home/biografia-artista.jpg" alt="Biografia dell'artista">
+								<p>Biografia</p>
+							</a>
+						</li>
+						<li>
+							<a href="dafare.html">
+								<img src="img/home/profilo-instagram-artista.jpg" alt="Profilo Instagram dell'Artista">
+								<p>Profilo Instagram</p>
+							</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+					<!--Footer delle pagine-->
+				<footer>
+					<a href="index.html" target="blank">
+						<img src="img/template/logo-facebook.png" alt="Logo Facebook" class=icona-social>
+					</a>
+					<a href="index.html" target="blank">
+						<img src="img/template/logo-instagram.png" alt="Logo Instagram" class=icona-social>
+					</a>
+					<p>&copy; 2017 Copyright</p>
+				</footer>
+	</body>
+</html>

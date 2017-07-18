@@ -1,0 +1,216 @@
+/******************************************
+GENERAL
+*******************************************/
+
+
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.container { /*sticky footer in fondo alla pagina (questo è buono se il footer ha dimensione fissa*/
+	min-height: calc(100vh - 76.188px);
+}
+
+.show{display:block!important} /*classe per mostrare il menu con javascript al click dell'icona*/
+
+/******************************************
+HEADER
+*******************************************/
+
+header {
+	/*background-color: red;*/
+	background-image: url("../img/template/header-desktop.jpg");
+	height: 289px;
+	margin: 0 0 0 0;  /*margine esterno al blocco*/
+	/*padding: 5px 0 5px 0;  /*margine interno al blocco*/
+	padding: 0 0;
+	/*overflow: auto; /*per evitare che sparisca con il logo a sinistra -- poi tolto per menu a tendina*/
+}
+
+#logo {
+	text-align: left;
+	display: inline-block;
+	/*padding-left: 5%;*/
+	/*width: 70%;*/
+}
+
+h1 {
+	color: #000000;
+	font-family: 'Great Vibes', cursive;
+	/*margin: 15px 0;*/
+	margin: 0;
+	font-size: 8.0em;
+	font-weight: normal;
+}
+
+h2 {
+	color: #000000;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	/*margin: 15px 0 20px 0;*/
+	margin: 0;
+	font-size: 2.0em;
+}
+
+.icona-menu{
+	background-color: none;
+	cursor: pointer;
+	width: 50px;
+}
+
+
+
+/******************************************
+NAV
+*******************************************/
+
+nav {
+	background-color: #651D36;
+	text-align: center;
+	padding: 10px 0;
+	display: block;
+}
+
+nav a {/*tutti gli elementi "a" dentro "nav"*/
+	color: #FFFFFF;
+	font-size: bold;
+}
+
+nav ul{
+	list-style: none; /*elimino i ballet neri della lista*/
+	margin: 0; /*solo due valori sottindento che va su, dx e si ripete giu e sx*/
+	padding: 0; /*ul di default ha del padding a sinistra*/
+}
+
+nav li{
+	display: inline-block; /*mostro orizzontalmente i box model*/
+}
+
+nav a:hover{
+	color: #297F52; /* cambio colore quando il mouse passa sui link*/
+}
+
+nav a.selected{
+	color: #297F52;  /* coloro il link della pagina attivav*/
+}
+
+.main-menu{
+	display: none;
+}
+
+
+
+
+/******************************************
+SECTION
+*******************************************/
+
+#wrapper{
+	max-width: 940px;
+	margin:0 auto 0 auto; /*si accentra*/
+	padding:0 5% 5px 5%;  /*% sull'orizzontale per essere responsive*/
+}
+
+#gallery-home{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+#gallery-home li {
+	float: left; /*per fare layout a 2 colonne??*/
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+}
+
+#gallery-home li a p{
+	font-size: 0.85em;
+	color: #000000;
+	padding: 5%;
+	margin: 0;
+}
+
+
+
+/******************************************
+FOOTER
+*******************************************/
+
+footer{
+	text-align: center;
+	clear: both; /*per avere pulito destra e sinistra, quindi resta sotto tutto*/
+	padding: 0 0 0 0;
+	background-image: url("../img/template/footer-desktop.jpg");
+	height: 201px;
+
+
+}
+
+footer p{
+	font-size: 0.85em;
+}
+
+.icona-social{
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+
+/******************************************
+BIOGRAFIA
+*******************************************/
+
+.foto-profilo{
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+	border-radius: 100%; /*per avere bordi smussati.. al 100% viene un cerchio*/
+}
+
+/******************************************
+CONTATTI
+*******************************************/
+
+#contact-info{
+	list-style: none;
+	padding: 0;
+}
+
+#contact-info a{
+	color: #000000;
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+#contact-info li.indirizzo a{
+	background-image: url(../img/icona-indirizzo-casa.png);
+}
+
+#contact-info li.telefono a{
+	background-image: url(../img/icona-telefono.png);
+}
+
+#contact-info li.email a{
+	background-image: url(../img/icona-email.png);
+}
+
+
+
+
+
+
+
