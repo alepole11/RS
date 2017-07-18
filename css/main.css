@@ -72,6 +72,10 @@ h2 {
 	font-size: 2.0em;
 }
 
+.container-icona-menu{
+	width: 100%;
+}
+
 .icona-menu{
 	cursor: pointer;
 	width: 50px;
