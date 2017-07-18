@@ -20,6 +20,21 @@
 		font-size: 1.0em; 
 	}
 
+	.icona-menu{
+		cursor: pointer;
+		width: 35px;
+		z-index: 10;
+		position: absolute;
+	}
+
+.icona-menu-attivo{
+		display: none;
+		cursor: pointer;
+		width: 35px;
+		z-index: 9;
+		position: absolute;
+	}
+
 
 	/******************************************
 	NAV
