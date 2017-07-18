@@ -21,12 +21,15 @@
 			//When btn is clicked
 			$(".icona-menu").click(function() {
 				$(".main-menu").toggleClass("show");
+				$(".effetto-opaco").toggleClass("show");
+				$(".icona-menu-attivo").toggleClass("show");
 			});  
 	    });
 	    </script>
 
 	</head>
 	<body>
+	<div class="effetto-opaco"></div>
 		<div class="container">
 			<header>
 				<!--<div id="container-titolo">-->
@@ -52,6 +55,9 @@
 				<!--Menu Ale-->
 				
 				<img src="img/template/icona-menu.png" class="icona-menu">
+				<img src="img/template/icona-menu-attivo.png" class="icona-menu-attivo">
+
+
 
 				<!--</div>-->
 			</header>
