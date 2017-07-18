@@ -6,6 +6,20 @@
 	HEADER
 	*******************************************/
 
+	header {
+		background-image: url("../img/template/header-mobile.jpg");
+		background-repeat: no-repeat;
+		height: 192px;
+	}
+
+	h1{
+		font-size: 4.0em;
+	}
+
+	h2{
+		font-size: 1.0em; 
+	}
+
 
 	/******************************************
 	NAV
@@ -35,7 +49,15 @@
 			margin:1%;
 		}
 
+	/******************************************
+	FOOTER
+	*******************************************/
 
+	footer{
+		background-image: url("../img/template/footer-mobile.jpg");
+		background-repeat: no-repeat;
+		height: 136px;
+	}
 
 }
 
@@ -72,11 +94,6 @@
 	HEADER
 	*******************************************/
 
-		#logo{
-			text-align: center;
-			width: 100%;
-			/*float: none;*/
-		}
 
 	/******************************************
 	NAV
