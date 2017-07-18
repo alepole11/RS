@@ -28,11 +28,17 @@ body {
 }
 
 .container { /*sticky footer in fondo alla pagina (questo è buono se il footer ha dimensione fissa*/
-	min-height: calc(100vh - 76.188px);
+	min-height: calc(100vh - 201px);
 }
 
 .show{display:block!important} /*classe per mostrare il menu con javascript al click dell'icona*/
 .hide{display:none} 
+
+.clearfix::after{ /*per risolvere il margin collapse e far occupare tutto lo spazio*/
+	content: " "; /*crea elemento vuoto all'estremità inferiore del tag*/
+	display: table; 
+	clear: both;
+}
 
 /******************************************
 HEADER
@@ -78,7 +84,7 @@ h2 {
 
 .icona-menu{
 	cursor: pointer;
-	width: 50px;
+	width: 48px;
 	z-index: 10;
 	position: relative;
 	margin-left: 2%;
@@ -87,7 +93,7 @@ h2 {
 .icona-menu-attivo{
 	display: none;
 	cursor: pointer;
-	width: 50px;
+	width: 48px;
 	z-index: 9;
 	position: relative;
 }
@@ -110,7 +116,7 @@ nav {
 
 nav a {/*tutti gli elementi "a" dentro "nav"*/
 	color: #FFFFFF;
-	font-size: bold;
+	font-size: normal;
 }
 
 nav ul{
@@ -121,14 +127,17 @@ nav ul{
 
 nav li{
 	display: inline-block; /*mostro orizzontalmente i box model*/
+	padding: 0 1%;
 }
 
 nav a:hover{
-	color: #297F52; /* cambio colore quando il mouse passa sui link*/
+	color: #bfbfbf; /* cambio colore quando il mouse passa sui link*/
+	font-size: bold;
 }
 
 nav a.selected{
-	color: #297F52;  /* coloro il link della pagina attivav*/
+	color: #bfbfbf;  /* coloro il link della pagina attivav*/
+	font-size: bold;
 }
 
 .main-menu{
@@ -144,10 +153,10 @@ nav a.selected{
 SECTION
 *******************************************/
 
-#wrapper{
+.wrapper{
 	max-width: 940px;
 	margin:0 auto 0 auto; /*si accentra*/
-	padding:0 5% 5px 5%;  /*% sull'orizzontale per essere responsive*/
+	padding:30px 5% 30px 5%;  /*% sull'orizzontale per essere responsive*/
 }
 
 #gallery-home{
@@ -163,9 +172,9 @@ img{
 #gallery-home li {
 	float: left; /*per fare layout a 2 colonne??*/
 	/*width: 45%;*/
-	width: 28.33333333333%;
-	margin: 2.5%;
-	/*padding: mi fa incazzare*/
+	width: 25.33333333333%;
+	margin: 2%;
+	padding: 2% 2% 0 2%;
 	background-color: #f5f5f5;
 }
 
@@ -194,17 +203,19 @@ footer{
 	background-image: url("../img/template/footer-desktop.jpg");
 	background-repeat: no-repeat;
 	height: 201px;
-
-
 }
 
 footer p{
 	font-size: 0.85em;
 }
 
+.social-copyright{
+	padding-top: 60px;
+}
+
 .icona-social{
-	width: 30px;
-	height: 30px;
+	width: 48px;
+	height: 48px;
 	margin: 0 5px;
 }
 

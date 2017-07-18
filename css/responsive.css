@@ -76,7 +76,9 @@
 	*******************************************/
 
 		#gallery-home li{
-			width: 45%;
+			width: 42%;
+			margin: 2%;
+			padding: 2% 2% 0 2%;
 		}
 
 	/******************************************
@@ -98,11 +100,24 @@
 		height: 136px;
 	}
 
+	.social-copyright{
+		padding-top: 30px;
+	}
+
+	.icona-social{
+		width: 35px;
+		height: 35px;
+	}
+
 }
 
 /******************************************************************* VERSIONE TABLET ***********************/
 
 @media screen and (min-width: 661px) and (max-width: 900px) {
+
+	/******************************************
+	HEADER
+	*******************************************/
 
 	h1{
 		font-size: 7.0em;
@@ -115,6 +130,14 @@
 	.container-icona-menu{
 		text-align: center;
 		padding-top: 15px;
+	}
+
+	/******************************************
+	FOOTER
+	*******************************************/
+
+	.social-copyright{
+		padding-top: 50px;
 	}
 
 }
