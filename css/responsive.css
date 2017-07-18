@@ -1,4 +1,4 @@
-/******************************************************************* VERSIONE MOBILE ***********************/
+/******************************************************************* VERSIONE SMARTPHONE ***********************/
 
 @media screen and (max-width: 660px){
 
@@ -13,11 +13,11 @@
 	}
 
 	h1{
-		font-size: 4.0em;
+		font-size: 4.2em;
 	}
 
 	h2{
-		font-size: 1.0em; 
+		font-size: 1.2em; 
 	}
 
 	.icona-menu{
@@ -27,18 +27,27 @@
 		position: relative;
 	}
 
-.icona-menu-attivo{
+	.icona-menu-attivo{
 		display: none;
 		cursor: pointer;
 		width: 35px;
 		z-index: 9;
-		position: absolute;
+		position: relative;
 	}
 
 
 	/******************************************
 	NAV
 	*******************************************/
+
+	nav{
+		padding: 5px 0;
+	}
+
+	nav li{
+		display: block; /*mostro orizzontalmente i box model*/
+		padding: 3%;
+	}
 
 	/******************************************
 	CONTACT
@@ -54,6 +63,14 @@
 			float: right; /*per sicurezza su alcuni browser*/
 		}
 
+
+	/******************************************
+	PORTFOLIO
+	*******************************************/
+
+		#gallery-home li{
+			width: 45%;
+		}
 
 	/******************************************
 	GALLERIA DI TEST
@@ -76,9 +93,23 @@
 
 }
 
+/******************************************************************* VERSIONE TABLET ***********************/
+
+@media screen and (min-width: 661px) and (max-width: 900px) {
+
+	h1{
+		font-size: 7.0em;
+	}
+
+	h2{
+		font-size: 2.0em; 
+	}
+
+}
+
 /******************************************************************* VERSIONE DESKTOP ***********************/
 
-@media screen and (min-width: 661px){
+@media screen and (min-width: 901px){
 
 	/******************************************
 	GALLERIA DI TEST
@@ -101,7 +132,7 @@
 	*******************************************/
 
 		#gallery-home li{
-			width: 28.33333333333%;
+			
 		}
 
 
