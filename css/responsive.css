@@ -24,7 +24,7 @@
 		cursor: pointer;
 		width: 35px;
 		z-index: 10;
-		/*position: absolute;*/
+		position: relative;
 	}
 
 .icona-menu-attivo{
