@@ -118,6 +118,17 @@
 		height: 35px;
 	}
 
+	/******************************************
+	PAGINA OPERE CON GALLERIA
+	*******************************************/
+
+	.galleria-opere a img{
+		/*max-width: 33%;*/
+		/*transform: scale(0.5, 0.5);*/
+		width: calc(100vw / 4);
+		height: calc(100vw / 4);
+	}
+
 }
 
 /******************************************************************* VERSIONE TABLET ***********************/
@@ -170,6 +181,17 @@
 	#contatti{
 		width:40%;
 		float: right; /*per sicurezza su alcuni browser*/
+
+	/******************************************
+	PAGINA OPERE CON GALLERIA
+	*******************************************/
+
+	.galleria-opere a img{
+		/*max-width: 33%;*/
+		/*transform: scale(0.5, 0.5);*/
+		width: 150px;
+		height: 150px;
+	}
 
 	
 
