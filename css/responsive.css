@@ -60,17 +60,30 @@
 	CONTACT
 	*******************************************/
 
+	#info{
+		float: none;
+		width: 100%;
+	}
 
+	#contatti{
+		float: none;
+		width: 100%;
+	}
+
+	#map{
+	/*background-color: yellow;*/
+		text-align: left;
+	}
 
 	/******************************************
 	SECTION
 	*******************************************/
 
-		#gallery-home li{
-			width: 42%;
-			margin: 2%;
-			padding: 2% 2% 0 2%;
-		}
+	#gallery-home li{
+		width: 42%;
+		margin: 2%;
+		padding: 2% 2% 0 2%;
+	}
 
 	.citazione-home{
 		font-size: 1.6em;
@@ -150,14 +163,15 @@
 	*******************************************/
 
 	/*I blocchi info e contatti vengono mostrati */
-	#info{
+	/*#info{
 		width: 50%;
 		float: left;
 	}
 	#contatti{
 		width:40%;
 		float: right; /*per sicurezza su alcuni browser*/
-	}
+
+	
 
 }
 
@@ -206,7 +220,7 @@
 	*******************************************/
 
 	/*I blocchi info e contatti vengono mostrati */
-	#info{
+	/*#info{
 		display: inline-block;
 		width: 50%;
 		float: left;
@@ -215,7 +229,8 @@
 		display: inline-block;
 		width:40%;
 		float: right; /*per sicurezza su alcuni browser*/
-	}
+
+	
 
 
 

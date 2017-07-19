@@ -49,27 +49,26 @@
 				</nav>
 
 			<div class="wrapper clearfix"> <!--inserito dopo per racchiudere-->
-				<section id=info>
-					<h3>Info</h3>
-					<p><b>Rolando Scaccabarozzi</b></p>
-					<p>Pittore | Vetrinista | Decoratore su tessuto.</p>
-					<p>Si realizzano opere su commissione</p>
-				</section>
-				<section id=contatti>
-					<h3>Contatti</h3>
-					<ul id=contact-info>
-						<li class="indirizzo"><a href="">Vimercate (MB) - Italy</a></li>
-						<li class="telefono"><a href="tel:+393487495307"> +39 3487495307</a></li>
-						<li class="email"><a href="mailto:scarox@libero.it"> scarox@libero.it</a></li>
-					</ul>
+				<section class="info-contatti clearfix">
+					<section id=info>
+						<h3>Info</h3>
+						<p><b>Rolando Scaccabarozzi</b></p>
+						<p>Pittore | Vetrinista | Decoratore su tessuto.</p>
+						<p>Si realizzano opere su commissione</p>
+					</section>
+					<section id=contatti>
+						<h3>Contatti</h3>
+						<ul id=contact-info>
+							<li class="indirizzo"><a href="">Vimercate (MB) - Italy</a></li>
+							<li class="telefono"><a href="tel:+393487495307"> +39 3487495307</a></li>
+							<li class="email"><a href="mailto:scarox@libero.it"> scarox@libero.it</a></li>
+						</ul>
+					</section>
 				</section>
 				<section id=map>
 					<h3>Mappa</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+					<div id="mappa-google"></div>
 				</section>
-
-
-
 			</div>
 
 
@@ -86,6 +85,23 @@
 						<p>&copy; 2017 Rolando Scaccabarozzi</p>
 					</div>
 				</footer>
+	<!--Google Maps Code-->
+    <script>
+      function initMap() {
+        var uluru = {lat: 45.615297, lng: 9.371823};
+        var map = new google.maps.Map(document.getElementById('mappa-google'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAffyboKUfaFQ2sryzpnTMWvBk0_AY1g-M&callback=initMap">
+    </script>
 
 	</body>
 </html>
