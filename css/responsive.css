@@ -94,10 +94,7 @@
 	GALLERIA DI TEST
 	*******************************************/
 
-		.test-thumbnail{
-			max-width: 30%;
-			margin:1%;
-		}
+
 
 	/******************************************
 	FOOTER
@@ -122,12 +119,24 @@
 	PAGINA OPERE CON GALLERIA
 	*******************************************/
 
+	.opere-singole a img{
+		width: calc(100vw / 2);
+		height: calc(100vw / 2);
+	}
+
 	.galleria-opere a img{
 		/*max-width: 33%;*/
 		/*transform: scale(0.5, 0.5);*/
 		width: calc(100vw / 4);
 		height: calc(100vw / 4);
 	}
+
+	.test-thumbnail{
+		max-width: 30%;
+		margin:1%;
+	}
+
+
 
 }
 

@@ -314,8 +314,28 @@ section p{
 	text-align: justify;
 }
 
+.opere-singole{
+	vertical-align: middle;
+}
+
+.opere-singole p {
+	vertical-align: middle;
+}
+
+.opere-singole a img{
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+
+.thumbnail-hidden{
+	display: none;
+}
+
 .galleria-opere{
 	text-align: center;
+	/*background-color: #bfbfbf;
+	padding: 10px 3% 10px 3%;*/
 }
 
 .galleria-opere a img{
