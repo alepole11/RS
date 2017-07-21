@@ -89,6 +89,11 @@
 		font-size: 1.6em;
 	}
 
+	.banner{
+		background-image: url(../img/parallax/parallax1-small.jpg);
+		height: 250px;
+	}
+
 
 	/******************************************
 	GALLERIA DI TEST
