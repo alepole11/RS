@@ -90,8 +90,9 @@
 	}
 
 	.banner{
-		background-image: url(../img/parallax/parallax1-small.jpg);
-		height: 50px;
+		/*background-image: url(../img/parallax/parallax1-small.jpg);
+		height: 50px;*/
+		background-attachment: scroll;
 	}
 
 
