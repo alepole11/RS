@@ -314,18 +314,37 @@ section p{
 	text-align: justify;
 }
 
-.opere-singole{
-	vertical-align: middle;
+.banner{
+	text-align: center;
+	background-image: url(../img/opere/olio-su-tela/oliosutela_007.jpg);
+	background-size: cover; /*scala immagine*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	position: absolute;
+	margin:0;
+	left: 0;
+	right: 0;
+	height: 300px;
 }
 
-.opere-singole p {
-	vertical-align: middle;
+/*Parallax*/
+.post-banner{
+	height: 300px;
+}
+
+.opere-singole{
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
 }
 
 .opere-singole a img{
-	height: 200px;
+	/*height: 200px;
 	width: 200px;
-	float: left;
+	float: left;*/
+	width: 100%;
+	height: 100px;
 }
 
 .thumbnail-hidden{

@@ -119,10 +119,22 @@
 	PAGINA OPERE CON GALLERIA
 	*******************************************/
 
+	.opere-singole{
+		display: block;
+		text-align: center;
+	}
+
+	.opere-singole p {
+		text-align: center;
+	}
+
 	.opere-singole a img{
 		width: calc(100vw / 2);
 		height: calc(100vw / 2);
+		float: none;
 	}
+
+
 
 	.galleria-opere a img{
 		/*max-width: 33%;*/
