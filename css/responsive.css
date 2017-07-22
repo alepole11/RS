@@ -93,6 +93,11 @@
 		background-image: url(../img/parallax/parallax1-small.jpg);
 		background-attachment: initial;
 	}
+
+	#biografia{
+		opacity: 0;
+		-webkit-transition: /*visibility 1s, */opacity 1s linear;
+	}
 	
 
 

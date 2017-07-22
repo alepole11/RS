@@ -58,6 +58,32 @@
 				});	    	
 	    </script>
 
+	    <script> /*Effetto contenuto che appare sfumato */
+	    	document.onscroll = function() {
+	    		var docViewTop = $(window).scrollTop();
+			    var docViewBottom = docViewTop + $(window).height();
+
+			    var elemTop = $('#biografia').offset().top;
+			    var elemBottom = elemTop + $('#biografia').height();
+
+			    console.log('Inizia il mio LOG');
+			    console.log('elemTop= ' + elemTop);
+			    console.log('docViewTop= ' + docViewTop);
+			    console.log('elemBottom= ' + elemBottom);
+			    console.log('docViewBottom= ' + docViewBottom);
+
+			    if (docViewBottom >= elemTop) {
+			    	console.log('Eccolo!');
+			    	document.getElementById('biografia').style.opacity = '1';
+
+			    } else {
+			    	console.log('Fallito');
+			    }
+
+
+			};	    	
+	    </script>
+
 	</head>
 	<body>
 		<div class="container">
@@ -135,7 +161,7 @@
 			<div class="banner"></div>
 			<div class="post-banner"></div>
 
-			<section id="biografia">
+			<section id=biografia>
 					<a name="anchor-biografia"></a>
 					<img src="img/profilo-biografia-artista.png" alt="Foto profilo dell'artista Rolando Scaccabarozzi" class=foto-profilo>
 					<h3>Biografia</h3>
