@@ -72,10 +72,14 @@
 			    console.log('elemBottom= ' + elemBottom);
 			    console.log('docViewBottom= ' + docViewBottom);
 
-			    if (docViewBottom >= elemTop) {
+			    if (docViewBottom >= elemTop + 50) {
 			    	console.log('Eccolo!');
-			    	document.getElementById('biografia').style.opacity = '1';
-
+			    	/*Giusto ma sbagliato
+					setTimeout(function () {
+					            			document.getElementById('biografia').style.opacity = '1';
+					        			}, 400);
+					        			*/
+					document.getElementById('biografia').style.opacity = '1';
 			    } else {
 			    	console.log('Fallito');
 			    }

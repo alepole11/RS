@@ -95,8 +95,9 @@
 	}
 
 	#biografia{
+		background-color: grey;
 		opacity: 0;
-		-webkit-transition: /*visibility 1s, */opacity 1s linear;
+		-webkit-transition: opacity 1s linear;
 	}
 	
 
