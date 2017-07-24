@@ -89,13 +89,24 @@
 		font-size: 1.6em;
 	}
 
-	.banner{
+	.banner1{
 		background-image: url(../img/parallax/parallax1-small.jpg);
 		background-attachment: initial;
 	}
 
+	.banner2{
+		background-image: url(../img/parallax/parallax2-small.jpg);
+		background-attachment: initial;
+	}
+
 	#biografia{
-		background-color: grey;
+		/*background-color: grey;*/
+		opacity: 0;
+		-webkit-transition: opacity 1s linear;
+	}
+
+	#container-contatti{
+		/*background-color: red;*/
 		opacity: 0;
 		-webkit-transition: opacity 1s linear;
 	}
@@ -214,6 +225,20 @@
 	#contatti{
 		width:40%;
 		float: right; /*per sicurezza su alcuni browser*/
+
+	/******************************************
+	SECTION
+	*******************************************/
+
+	.banner1{
+		background-image: url(../img/parallax/parallax1-small.jpg);
+		background-attachment: initial;
+	}
+
+	.banner2{
+		background-image: url(../img/parallax/parallax2-small.jpg);
+		background-attachment: initial;
+	}
 
 	/******************************************
 	PAGINA OPERE CON GALLERIA

@@ -12,82 +12,6 @@
 		<link rel="stylesheet" type="text/css" href="css/responsive.css"> <!--foglio di stile responsive-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Fondamentale per il rendering sugli schermi!!!-->
 
-		<!-- JavaScript necessario per il menu-->
-	    <script src="js/jquery-1.7.1.min.js"></script>
-	    
-	    <script>
-	    	$(document).ready(function(){   
-	    
-			//When btn is clicked
-			$(".icona-menu").click(function() {
-				$(".main-menu").toggleClass("show");
-				$(".effetto-opaco").toggleClass("show");
-				//$(".icona-menu-attivo").toggleClass("show");
-			});  
-	    });
-	    </script>
-
-	    <script>
-	    	$(document).ready(function(){   
-	    
-			//When btn is clicked
-			$(".main-menu").click(function() {
-				$(".main-menu").toggleClass("show");
-				$(".effetto-opaco").toggleClass("show");
-				//$(".icona-menu-attivo").toggleClass("show");
-			});  
-	    });
-	    </script>
-<!--Effetto Scroll (incluso link interni-->
-	    <script>
-	    	$(function() {
-				$('a[href*=#]:not([href=#])').click(function() {
-					$(".effetto-opaco").toggleClass("show");
-					$(".main-menu").toggleClass("show");
-				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-				$('html,body').animate({
-				scrollTop: target.offset().top
-				}, 1000);
-				return false;
-				}
-				}
-				});
-				});	    	
-	    </script>
-
-	    <script> /*Effetto contenuto che appare sfumato */
-	    	document.onscroll = function() {
-	    		var docViewTop = $(window).scrollTop();
-			    var docViewBottom = docViewTop + $(window).height();
-
-			    var elemTop = $('#biografia').offset().top;
-			    var elemBottom = elemTop + $('#biografia').height();
-
-			    console.log('Inizia il mio LOG');
-			    console.log('elemTop= ' + elemTop);
-			    console.log('docViewTop= ' + docViewTop);
-			    console.log('elemBottom= ' + elemBottom);
-			    console.log('docViewBottom= ' + docViewBottom);
-
-			    if (docViewBottom >= elemTop + 50) {
-			    	console.log('Eccolo!');
-			    	/*Giusto ma sbagliato
-					setTimeout(function () {
-					            			document.getElementById('biografia').style.opacity = '1';
-					        			}, 400);
-					        			*/
-					document.getElementById('biografia').style.opacity = '1';
-			    } else {
-			    	console.log('Fallito');
-			    }
-
-
-			};	    	
-	    </script>
-
 	</head>
 	<body>
 		<div class="container">
@@ -103,7 +27,7 @@
 			</header>
 				<nav class="main-menu">
 					<ul>
-						<li><a href="index.html">OPERE</a></li>
+						<li><a href="#anchor-opere">OPERE</a></li>
 						<li><a href="#anchor-biografia">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
 						<li><a href="#">ESPOSIZIONI</a></li>
 						<li><a href="#anchor-info">CONTATTI</a></li>
@@ -112,6 +36,7 @@
 
 			<div class="wrapper clearfix"> <!--inserito dopo per racchiudere-->
 				<section>
+					<a name="anchor-opere"></a>
 					<ul id=gallery-home>
 						<li>
 							<a href="opere/dipinti-olio-su-tela.html">
@@ -152,71 +77,70 @@
 					</ul>
 
 				</section>
+			
 
+				<div class="citazione-home clearfix">
+					<p>"In tutte le cose della natura esiste qualcosa di meraviglioso."</p>
+				</div>
 
+				<!--Parallax-->
+				<div class="banner1"></div>
+				<div class="post-banner"></div>
 
-			</div>
+				<section id=biografia>
+						<a name="anchor-biografia"></a>
+						<img src="img/profilo-biografia-artista.png" alt="Foto profilo dell'artista Rolando Scaccabarozzi" class=foto-profilo>
+						<h3>Biografia</h3>
+						<p>“In tutte le cose della natura esiste qualcosa di meraviglioso.”</p>
+						<p>Aristotele</p>
 
-			<div class="citazione-home clearfix">
-				<p>"In tutte le cose della natura esiste qualcosa di meraviglioso."</p>
-			</div>
+						<p>Rolando Scaccabarozzi nasce il 18 settembre 1957 a Vimercate.
+						Consegue gli studi tecnico commerciali, si appassiona all’arte figurativa ed in particolare ai fiori. Da autodidatta decora ombrelli e tessuti, prediligendo la seta, ma è in età matura che si dedica completamente alla pittura ad olio, trasferendo su tela i motivi floreali che da sempre lo hanno ispirato.</p>
 
-			<!--Parallax-->
-			<div class="banner"></div>
-			<div class="post-banner"></div>
+						<p>Nell’opera di Rolando Scaccabarozzi la natura si svela, si anima e diventa fonte di un sentimento di purezza ma anche di energia: fiori luminosi e freschi che riflettono la loro straordinaria bellezza.</p>
 
-			<section id=biografia>
-					<a name="anchor-biografia"></a>
-					<img src="img/profilo-biografia-artista.png" alt="Foto profilo dell'artista Rolando Scaccabarozzi" class=foto-profilo>
-					<h3>Biografia</h3>
-					<p>“In tutte le cose della natura esiste qualcosa di meraviglioso.”</p>
-					<p>Aristotele</p>
+						<p>La natura è “morta” solo nominativamente poiché lo straordinario vigore dell’artista le conferisce una vitalità insperata, che la fa addirittura uscire dalla tela che sembra incapace di contenerla, mettendola in viva relazione con l’ambiente e con chi la guarda.</p>
 
-					<p>Rolando Scaccabarozzi nasce il 18 settembre 1957 a Vimercate.
-					Consegue gli studi tecnico commerciali, si appassiona all’arte figurativa ed in particolare ai fiori. Da autodidatta decora ombrelli e tessuti, prediligendo la seta, ma è in età matura che si dedica completamente alla pittura ad olio, trasferendo su tela i motivi floreali che da sempre lo hanno ispirato.</p>
+						<p>L’artista infatti svolge il suo sguardo al variegato mondo dei fiori, restituendo a ciascun esemplare una vita propria, un respiro nuovo: le immagini assumono così un’espressività rara che si compone nel delicato tratteggiare di forme e nell’originale accostamento dei colori.</p>
 
-					<p>Nell’opera di Rolando Scaccabarozzi la natura si svela, si anima e diventa fonte di un sentimento di purezza ma anche di energia: fiori luminosi e freschi che riflettono la loro straordinaria bellezza.</p>
+						<p>Rolando Scaccabarozzi conosce e ama i suoi soggetti e li riempie di emozioni.</p>
 
-					<p>La natura è “morta” solo nominativamente poiché lo straordinario vigore dell’artista le conferisce una vitalità insperata, che la fa addirittura uscire dalla tela che sembra incapace di contenerla, mettendola in viva relazione con l’ambiente e con chi la guarda.</p>
+						<p>La natura, con la sua rotondità delle linee, con i suoi forti ma armonici contrasti di colore, da un’immagine di raffinata eleganza in cui vitalità e delicatezza sono una sola cosa.</p>
 
-					<p>L’artista infatti svolge il suo sguardo al variegato mondo dei fiori, restituendo a ciascun esemplare una vita propria, un respiro nuovo: le immagini assumono così un’espressività rara che si compone nel delicato tratteggiare di forme e nell’originale accostamento dei colori.</p>
-
-					<p>Rolando Scaccabarozzi conosce e ama i suoi soggetti e li riempie di emozioni.</p>
-
-					<p>La natura, con la sua rotondità delle linee, con i suoi forti ma armonici contrasti di colore, da un’immagine di raffinata eleganza in cui vitalità e delicatezza sono una sola cosa.</p>
-
-					<p>L’effetto è realizzato anche grazie al particolare accostamento di tele diverse che regalano all’osservatore un’insieme di straordinaria vivacità.
-					</p>
-				</section>
-
-			<!--Parallax-->
-			<div class="banner"></div>
-			<div class="post-banner"></div>
-
-
-				<section class="info-contatti clearfix">
-				<a name="anchor-info"></a>
-					<section id=info>
-						<h3>Info</h3>
-						<p><b>Rolando Scaccabarozzi</b></p>
-						<p>Pittore | Vetrinista | Decoratore su tessuto.</p>
-						<p>Si realizzano opere su commissione</p>
+						<p>L’effetto è realizzato anche grazie al particolare accostamento di tele diverse che regalano all’osservatore un’insieme di straordinaria vivacità.
+						</p>
 					</section>
-					<section id=contatti>
-						<h3>Contatti</h3>
-						<ul id=contact-info>
-							<li class="indirizzo"><a href="">Vimercate (MB) - Italy</a></li>
-							<li class="telefono"><a href="tel:+393487495307"> +39 3487495307</a></li>
-							<li class="email"><a href="mailto:scarox@libero.it"> scarox@libero.it</a></li>
-						</ul>
+
+				<!--Parallax-->
+				<div class="banner2"></div>
+				<div class="post-banner"></div>
+
+				<div id=container-contatti>
+					<section class="info-contatti clearfix">
+					<a name="anchor-info"></a>
+						<section id=info>
+							<h3>Info</h3>
+							<p><b>Rolando Scaccabarozzi</b></p>
+							<p>Pittore | Vetrinista | Decoratore su tessuto.</p>
+							<p>Si realizzano opere su commissione</p>
+						</section>
+						<section id=contatti>
+							<h3>Contatti</h3>
+							<ul id=contact-info>
+								<li class="indirizzo"><a href="">Vimercate (MB) - Italy</a></li>
+								<li class="telefono"><a href="tel:+393487495307"> +39 3487495307</a></li>
+								<li class="email"><a href="mailto:scarox@libero.it"> scarox@libero.it</a></li>
+							</ul>
+						</section>
 					</section>
-				</section>
-				<section id=map>
-					<h3>Mappa</h3>
-					<div id="mappa-google"></div>
-				</section>
-
-
+					<section id=map>
+						<h3>Mappa</h3>
+						<div id="mappa-google"></div>
+						<div id="post-mappa-google"></div>
+					</section>
+				</div>
+				<button onclick="ScrollToTopFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+			</div>
 
 		</div>
 					<!--Footer delle pagine-->
@@ -232,23 +156,115 @@
 					</div>
 				</footer>
 
-					<!--Google Maps Code-->
-    <script>
-      function initMap() {
-        var uluru = {lat: 45.615297, lng: 9.371823};
-        var map = new google.maps.Map(document.getElementById('mappa-google'), {
-          zoom: 10,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAffyboKUfaFQ2sryzpnTMWvBk0_AY1g-M&callback=initMap">
-    </script>
+
+		<!--SCRIPT JS NELLA PAGINA-->
+
+		<!--Chiamata alle funzioni da attivare allo scroll pagina:
+			- effettoDelay sul contenuto
+			-->
+		<script>
+	    	document.onscroll = function() {
+	    		/*myFunction();*/
+				displayToTopBtn();
+	    		if (effettoDelay('#biografia')) {
+	    			/*console.log('ho ricevuto true dalla funzione per BIOGRAFIA');*/
+	    			document.getElementById('biografia').style.opacity = '1';
+	    		};
+	    		if (effettoDelay('#container-contatti')) {
+	    			/*console.log('ho ricevuto true dalla funzione per CONTAINER-CONTATTI');*/
+	    			document.getElementById('container-contatti').style.opacity = '1';
+	    		};
+
+	    	}
+		</script>	
+
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			function displayToTopBtn() {
+			    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			        document.getElementById("scrollToTopBtn").style.display = "block";
+			    } else {
+			        document.getElementById("scrollToTopBtn").style.display = "none";
+			    }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function ScrollToTopFunction() {
+			    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+			    document.documentElement.scrollTop = 0; // For IE and Firefox
+			}
+
+		</script>
+
+		<!--Effetto opaco su click del menu principale-->
+	    <!-- JavaScript necessario per il menu-->
+	    <script src="js/jquery-1.7.1.min.js"></script>
+	    <script>
+	    	$(document).ready(function(){   
+	    
+			//When btn is clicked
+			$(".icona-menu").click(function() {
+				$(".main-menu").toggleClass("show");
+				$(".effetto-opaco").toggleClass("show");
+				//$(".icona-menu-attivo").toggleClass("show");
+			});  
+	    });
+	    </script>
+
+		<!--Effetto Scroll page su incluso link interni-->
+	    <script>
+	    	$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					$(".effetto-opaco").toggleClass("show");
+					$(".main-menu").toggleClass("show");
+				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+				$('html,body').animate({
+				scrollTop: target.offset().top
+				}, 1000);
+				return false;
+				}
+				}
+				});
+				});	    	
+	    </script>	
+
+	    <script> /*Effetto contenuto che appare mentre scorri */
+	    	function effettoDelay(elem) {
+	    		var docViewTop = $(window).scrollTop();
+			    var docViewBottom = docViewTop + $(window).height();
+			    var elemTop = $(elem).offset().top;
+			    var elemBottom = elemTop + $(elem).height();
+			    return(docViewBottom >= elemTop + 50);
+			};	    	
+	    </script>
+
+			<!--Funzione di prova-->
+		<!--<script>
+			function myFunction() {
+				console.log('Forse ci siamo');
+			};
+		</script>-->
+
+		<!--Google Maps Code-->
+	    <script>
+	      function initMap() {
+	        var uluru = {lat: 45.615297, lng: 9.371823};
+	        var map = new google.maps.Map(document.getElementById('mappa-google'), {
+	          zoom: 10,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAffyboKUfaFQ2sryzpnTMWvBk0_AY1g-M&callback=initMap">
+		</script>
 
 	</body>
 </html>
