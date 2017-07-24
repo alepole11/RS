@@ -33,6 +33,7 @@
 				<h1>Potere ai Fiori</h1>
 				<h2>di ROLANDO SCACCABAROZZI</h2>
 				<nav class="main-menu-2">
+				<div class="main-menu-2-top-border"></div>
 					<ul>
 						<li><a href="#anchor-opere">OPERE</a></li>
 						<li><a href="#anchor-biografia">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
@@ -194,7 +195,7 @@
 	    			document.getElementById('container-contatti').style.opacity = '1';
 	    		};
 	    		//inserire la condizione sullo schermo < 660px
-	    		if ($(window).scrollTop()> 192 && 1) {
+	    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
 	    			/*console.log('Devo mostrare menu fisso');*/
 	    			document.getElementById('header-2').style.display = 'block';
 	    		} else {
@@ -205,6 +206,7 @@
 		</script>	
 
 		<script>
+			//MOSTRA IL PULSATE TO TOP
 			// When the user scrolls down 20px from the top of the document, show the button
 			// Modificata per poter (poi) nascondere bottone quando sono nel footer
 			function displayToTopBtn() {
@@ -240,14 +242,14 @@
 				$(".main-menu").toggleClass("show");
 				$("body").toggleClass("stop-scrolling");
 				$('body').bind('touchmove', function(e){e.preventDefault()})
-				//$(".effetto-opaco").toggleClass("show");
+				$(".effetto-opaco").toggleClass("show");
 				//$(".icona-menu-attivo").toggleClass("show");
 			});  
 			$(".icona-menu-2").click(function() {
 				$(".main-menu-2").toggleClass("show");
 				$("body").toggleClass("stop-scrolling");
 				$('body').bind('touchmove', function(e){e.preventDefault()})
-				//$(".effetto-opaco").toggleClass("show");
+				$(".effetto-opaco").toggleClass("show");
 				//$(".icona-menu-attivo").toggleClass("show");
 			}); 
 
@@ -263,11 +265,13 @@
 				if (document.body.scrollTop > 200){ //se sono sceso nella pagina, agisco solo su 2) quelli del menu fisso
 					$(".main-menu-2").toggleClass("show");
 					$("body").toggleClass("stop-scrolling");
-					$('body').unbind('touchmove')
+					$('body').unbind('touchmove');
+					$(".effetto-opaco").toggleClass("show");
 				} else {
 					$(".main-menu").toggleClass("show");
 					$("body").toggleClass("stop-scrolling");
-					$('body').unbind('touchmove')
+					$('body').unbind('touchmove');
+					$(".effetto-opaco").toggleClass("show");
 				}
 				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && location.hostname == this.hostname) {
 				var target = $(this.hash);

@@ -108,6 +108,13 @@
 		z-index: 10;
 	}
 
+	.main-menu-2-top-border{
+		border: solid;
+		border-top:15px;
+		border-color: white;
+		
+	}
+
 	/******************************************
 	CONTACT
 	*******************************************/
