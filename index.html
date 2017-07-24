@@ -239,6 +239,7 @@
 			$(".icona-menu").click(function() {
 				$(".main-menu").toggleClass("show");
 				$("body").toggleClass("stop-scrolling");
+				$('body').bind('touchmove', function(e){e.preventDefault()})
 				//$(".effetto-opaco").toggleClass("show");
 				//$(".icona-menu-attivo").toggleClass("show");
 			});  
