@@ -109,8 +109,8 @@
 	}
 
 	.main-menu-2-top-border{
-		border: solid;
-		border-top:15px;
+		border-top: solid;
+		border-width: 2px; 
 		border-color: white;
 		
 	}
