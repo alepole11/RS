@@ -7,8 +7,8 @@
 	*******************************************/
 	#scrollToTopBtn {
     display: none; /* Hidden by default */
-	    width: 30px;
-	    height: 30px;
+	    width: 35px;
+	    height: 35px;
 	}
 
 	/******************************************
@@ -51,19 +51,42 @@
 		position: relative;
 	}
 
-	#testata-ridotta h1{
-		font-size: 1em;
+	#header-2{
+		display: none;
+		background-color: #651D36;
+		position: fixed;
+		top:0;
+		width: 100%;
+		z-index: 10;
+		padding-top: 5px;
+
+		padding-bottom: 5px;
+		text-align: center;
 	}
 
-	.icona-menu-ridotta{
+	#header-2 h1{
+		color: white;
+		font-size: 1.7em;
+		/*margin-left: 50px;*/
+		margin-top: 5px;
+		margin-bottom: 0px;
+	}
+
+	#header-2 h2{
+		color: white;
+		font-size: 0.6em;
+	}
+
+	.icona-menu-2{
 		cursor: pointer;
 		width: 35px;
 		z-index: 10;
-		/*position: relative;*/
+		position: absolute;
+		left: 10px;
+		top: 10px;
 		margin-left: 0;
 		text-align: center;
-		float: left;
-	}
+	} 
 
 
 	/******************************************
@@ -74,13 +97,15 @@
 		padding: 5px 0;
 	}
 
-	.nav-ridotto{
-		top: 700px;
-	}
-
 	nav li{
 		display: block; /*mostro orizzontalmente i box model*/
 		padding: 3%;
+	}
+
+	.main-menu-2{
+		display: none;
+		position: absolute;
+		z-index: 10;
 	}
 
 	/******************************************

@@ -27,12 +27,12 @@
 				<!--<img src="img/template/icona-menu-attivo.png" class="icona-menu-attivo">-->
 				<div class="effetto-opaco"></div>
 			</header>
-			<div id=testata-ridotta>
-				<img src="img/template/icona-menu.png" class="icona-menu-ridotta">
-				<h1>Potere ai Fiori</h1>
 
-			</div>
-				<nav class="main-menu">
+			<div id=header-2 class="clearfix">
+				<img src="img/template/icona-menu-white.png" class="icona-menu-2">
+				<h1>Potere ai Fiori</h1>
+				<h2>di ROLANDO SCACCABAROZZI</h2>
+				<nav class="main-menu-2">
 					<ul>
 						<li><a href="#anchor-opere">OPERE</a></li>
 						<li><a href="#anchor-biografia">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
@@ -40,6 +40,16 @@
 						<li><a href="#anchor-info">CONTATTI</a></li>
 					</ul>
 				</nav>
+			</div>
+
+			<nav class="main-menu">
+				<ul>
+					<li><a href="#anchor-opere">OPERE</a></li>
+					<li><a href="#anchor-biografia">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
+					<li><a href="#">ESPOSIZIONI</a></li>
+					<li><a href="#anchor-info">CONTATTI</a></li>
+				</ul>
+			</nav>
 
 			<div class="wrapper clearfix"> <!--inserito dopo per racchiudere-->
 				<section>
@@ -186,9 +196,9 @@
 	    		//inserire la condizione sullo schermo < 660px
 	    		if ($(window).scrollTop()> 192 && 1) {
 	    			/*console.log('Devo mostrare menu fisso');*/
-	    			document.getElementById('testata-ridotta').style.opacity = '1';
+	    			document.getElementById('header-2').style.display = 'block';
 	    		} else {
-	    			document.getElementById('testata-ridotta').style.opacity = '0';	
+	    			document.getElementById('header-2').style.display = 'none';	
 	    		};
 
 	    	}
@@ -228,9 +238,17 @@
 			//When btn is clicked
 			$(".icona-menu").click(function() {
 				$(".main-menu").toggleClass("show");
-				$(".effetto-opaco").toggleClass("show");
+				$("body").toggleClass("stop-scrolling");
+				//$(".effetto-opaco").toggleClass("show");
 				//$(".icona-menu-attivo").toggleClass("show");
 			});  
+			$(".icona-menu-2").click(function() {
+				$(".main-menu-2").toggleClass("show");
+				$("body").toggleClass("stop-scrolling");
+				//$(".effetto-opaco").toggleClass("show");
+				//$(".icona-menu-attivo").toggleClass("show");
+			}); 
+
 	    });
 	    </script>
 
@@ -238,8 +256,15 @@
 	    <script>
 	    	$(function() {
 				$('a[href*=#]:not([href=#])').click(function() {
-					$(".effetto-opaco").toggleClass("show");
+					//$(".effetto-opaco").toggleClass("show");  l'avevo messo io???
+					//$(".main-menu").toggleClass("show");
+				if (document.body.scrollTop > 200){ //se sono sceso nella pagina, agisco solo su 2) quelli del menu fisso
+					$(".main-menu-2").toggleClass("show");
+					$("body").toggleClass("stop-scrolling");
+				} else {
 					$(".main-menu").toggleClass("show");
+					$("body").toggleClass("stop-scrolling");
+				}
 				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && location.hostname == this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
