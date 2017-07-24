@@ -63,7 +63,7 @@ HEADER
 
 header {
 	/*background-color: red;*/
-	background-image: url("../img/template/header-desktop.jpg");
+	background-image: url("../img/template/header-desktop-xl.jpg");
 	background-repeat: no-repeat;
 	height: 289px;
 	margin: 0 0 0 0;  /*margine esterno al blocco*/
@@ -224,7 +224,7 @@ footer{
 	text-align: center;
 	clear: both; /*per avere pulito destra e sinistra, quindi resta sotto tutto*/
 	padding: 0 0 0 0;
-	background-image: url("../img/template/footer-desktop.jpg");
+	background-image: url("../img/template/footer-desktop-xl.jpg");
 	background-repeat: no-repeat;
 	height: 201px;
 }
