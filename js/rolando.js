@@ -1,9 +1,7 @@
 //CODICI JAVASCRIPT UTILIZZATI DA www.rolandoscaccabarozzi.it
 
-
-//CHIAMATA ALLE FUNZIONI DA ATTIVARE ALLO SCROLL PAGINA
-
-	    	document.onscroll = function() {
+//CHIAMATA FUNZIONI DA ATTIVARE ALLO SCORRIMENTO PAGINA
+document.onscroll = function() {
 	    		/*myFunction();*/
 				displayToTopBtn();
 	    		if (effettoDelay('#biografia')) {
@@ -14,9 +12,9 @@
 	    			/*console.log('ho ricevuto true dalla funzione per CONTAINER-CONTATTI');*/
 	    			document.getElementById('container-contatti').style.opacity = '1';
 	    		};
-	    		//inserire la condizione sullo schermo < 660px
+	    		//MOSTRO IL MENU SOTTILE SOLO SE LO SCHERMO é PICCOLO
 	    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
-	    			/*console.log('Devo mostrare menu fisso');*/
+	    			console.log('Devo mostrare menu fisso');
 	    			document.getElementById('header-2').style.display = 'block';
 	    		} else {
 	    			document.getElementById('header-2').style.display = 'none';	
@@ -24,7 +22,8 @@
 
 	    	}
 
-			//MOSTRA IL PULSATE TO TOP
+
+//MOSTRA IL PULSATE TO TOP
 			// When the user scrolls down 20px from the top of the document, show the button
 			// Modificata per poter (poi) nascondere bottone quando sono nel footer
 			function displayToTopBtn() {
@@ -122,3 +121,32 @@
 	          map: map
 	        });
 	      }
+
+//CAROUSEL
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
