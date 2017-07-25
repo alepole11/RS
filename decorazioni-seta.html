@@ -177,7 +177,21 @@
 	    <script src="js/jquery-1.7.1.min.js"></script>
 	    <script src="js/rolando.js"></script>
 
-
+<!--CHIAMATA FUNZIONI DA ATTIVARE ALLO SCORRIMENTO PAGINA-->
+	<script>
+	document.onscroll = function() {
+		    		
+					displayToTopBtn();
+		    		if (effettoDelay('#biografia')) {
+		    			/*console.log('ho ricevuto true dalla funzione per BIOGRAFIA');*/
+		    			document.getElementById('biografia').style.opacity = '1';
+		    		};
+		    		if (effettoDelay('#container-contatti')) {
+		    			/*console.log('ho ricevuto true dalla funzione per CONTAINER-CONTATTI');*/
+		    			document.getElementById('container-contatti').style.opacity = '1';
+		    		};
+		    	}
+	</script>
 
 	</body>
 </html>

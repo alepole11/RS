@@ -348,11 +348,13 @@ PAGINA OPERE CON GALLERIA
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	position: absolute;
+	position: relative;
 	margin:0;
 	left: 0;
 	right: 0;
 	height: 300px;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 .banner2{
@@ -363,16 +365,18 @@ PAGINA OPERE CON GALLERIA
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	position: absolute;
+	position: relative;
 	margin:0;
 	left: 0;
 	right: 0;
 	height: 300px;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
 
 /*Parallax*/
 .post-banner{
-	height: 300px;
+	height: 0px;
 }
 
 .opere-singole{
@@ -539,13 +543,24 @@ IMMAGINI NELLE PAGINE
 
 .sei-immagini{
 	margin-bottom: 10px;
-	
+
 }
 
 .sei-immagini img{
 	width: 15.15%;
 	margin: 0.5%;
 }
+
+.tre-immagini{
+	margin-bottom: 10px;
+}
+
+.tre-immagini img{
+	width: 32%;
+	margin: 0.5%;
+	border-radius: 1000px;
+}
+
 
 
 
