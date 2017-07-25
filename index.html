@@ -69,7 +69,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="dafare.html">
+							<a href="decorazioni-tessuti.html">
 								<img src="img/home/tessuti-dipinti-mano.jpg" alt="Decorazioni su Tessuti">
 								<p>Tessuti</p>
 							</a>
@@ -176,13 +176,52 @@
 					</div>
 				</footer>
 
+<!--CHIAMATA FUNZIONI DA ATTIVARE ALLO SCORRIMENTO PAGINA-->
+	<script>
+	document.onscroll = function() {
+		    		/*myFunction();*/
+		    		//console.log('partito onscroll');
+		    		//MOSTRO IL MENU SOTTILE SOLO SE LO SCHERMO é PICCOLO
+		    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
+		    			//console.log('Devo mostrare menu fisso');
+		    			document.getElementById('header-2').style.display = 'block';
+		    		} else {
+		    			document.getElementById('header-2').style.display = 'none';	
+		    		};
+		    		
+					displayToTopBtn();
+		    		if (effettoDelay('#biografia')) {
+		    			/*console.log('ho ricevuto true dalla funzione per BIOGRAFIA');*/
+		    			document.getElementById('biografia').style.opacity = '1';
+		    		};
+		    		if (effettoDelay('#container-contatti')) {
+		    			/*console.log('ho ricevuto true dalla funzione per CONTAINER-CONTATTI');*/
+		    			document.getElementById('container-contatti').style.opacity = '1';
+		    		};
+		    	}
+	</script>
 
 <!--INCLUSIONE JAVASCRIPT DEDICATI ED ESTERNI-->
 	    <script src="js/jquery-1.7.1.min.js"></script>
 	    <script src="js/rolando.js"></script>
+<!--GOOGLE MAPS-->	    
 	    <script async defer
 	    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAffyboKUfaFQ2sryzpnTMWvBk0_AY1g-M&callback=initMap">
 		</script>
+		<script>
+
+	      function initMap() {
+	        var uluru = {lat: 45.615297, lng: 9.371823};
+	        var map = new google.maps.Map(document.getElementById('mappa-google'), {
+	          zoom: 10,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
 	    
 
 	</body>

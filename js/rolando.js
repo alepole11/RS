@@ -1,26 +1,6 @@
 //CODICI JAVASCRIPT UTILIZZATI DA www.rolandoscaccabarozzi.it
 
-//CHIAMATA FUNZIONI DA ATTIVARE ALLO SCORRIMENTO PAGINA
-document.onscroll = function() {
-	    		/*myFunction();*/
-				displayToTopBtn();
-	    		if (effettoDelay('#biografia')) {
-	    			/*console.log('ho ricevuto true dalla funzione per BIOGRAFIA');*/
-	    			document.getElementById('biografia').style.opacity = '1';
-	    		};
-	    		if (effettoDelay('#container-contatti')) {
-	    			/*console.log('ho ricevuto true dalla funzione per CONTAINER-CONTATTI');*/
-	    			document.getElementById('container-contatti').style.opacity = '1';
-	    		};
-	    		//MOSTRO IL MENU SOTTILE SOLO SE LO SCHERMO é PICCOLO
-	    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
-	    			console.log('Devo mostrare menu fisso');
-	    			document.getElementById('header-2').style.display = 'block';
-	    		} else {
-	    			document.getElementById('header-2').style.display = 'none';	
-	    		};
 
-	    	}
 
 
 //MOSTRA IL PULSATE TO TOP
@@ -85,7 +65,8 @@ document.onscroll = function() {
 					$('body').unbind('touchmove');
 					$(".effetto-opaco").toggleClass("show");
 				}
-				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && location.hostname == this.hostname) {
+				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && 
+					location.hostname == this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 				if (target.length) {
@@ -108,19 +89,7 @@ document.onscroll = function() {
 			    return(docViewBottom >= elemTop + 50);
 			};	    	
 
-//GOOGLE MAPS
 
-	      function initMap() {
-	        var uluru = {lat: 45.615297, lng: 9.371823};
-	        var map = new google.maps.Map(document.getElementById('mappa-google'), {
-	          zoom: 10,
-	          center: uluru
-	        });
-	        var marker = new google.maps.Marker({
-	          position: uluru,
-	          map: map
-	        });
-	      }
 
 //CAROUSEL
 

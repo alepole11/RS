@@ -406,9 +406,9 @@ PAGINA OPERE CON GALLERIA
 	width: 100px;
 }
 
-/********************************
+/******************************************
 CAROUSEL
-*********************************/
+*******************************************/
 
 * {box-sizing:border-box}
 
@@ -503,8 +503,9 @@ CAROUSEL
   to {opacity: 1}
 }
 
-
-/**/
+/******************************************
+ALTRA GALLERIA
+*******************************************/
 
 .w3-content{max-width:980px;margin:auto}.w3-rest{overflow:hidden}
 
@@ -532,7 +533,19 @@ CAROUSEL
 
 .w3-hover-opacity-off:hover{opacity:1}
 
+/******************************************
+IMMAGINI NELLE PAGINE
+*******************************************/
 
+.sei-immagini{
+	margin-bottom: 10px;
+	
+}
+
+.sei-immagini img{
+	width: 15.15%;
+	margin: 0.5%;
+}
 
 
 
