@@ -1,256 +1,251 @@
-/******************************************************************* VERSIONE SMARTPHONE ***********************/
+/***********************************************************************************************************************
+************************************************** VERSIONE SMARTPHONE *************************************************
+***********************************************************************************************************************/
 
 @media screen and (min-width: 250px) and (max-width: 660px){
 
 	/******************************************
 	GENERAL
 	*******************************************/
-	#scrollToTopBtn {
-    display: none; /* Hidden by default */
-	    width: 35px;
-	    height: 35px;
-	}
+		#scrollToTopBtn {
+	    display: none; /* Hidden by default */
+		    width: 35px;
+		    height: 35px;
+		}
 
 	/******************************************
 	HEADER
 	*******************************************/
 
-	header {
-		background-image: url("../img/template/header-mobile.jpg");
-		background-repeat: no-repeat;
-		height: 192px;
-	}
+		header {
+			background-image: url("../img/template/header-mobile.jpg");
+			background-repeat: no-repeat;
+			height: 192px;
+		}
 
-	h1{
-		font-size: 4.2em;
-	}
+		h1{
+			font-size: 4.2em;
+		}
 
-	h2{
-		font-size: 1.2em; 
-	}
+		h2{
+			font-size: 1.2em; 
+		}
 
-	.container-icona-menu{
-		text-align: center;
-		padding-top: 10px;
-	}
+		.container-icona-menu{
+			text-align: center;
+			padding-top: 10px;
+		}
 
-	.icona-menu{
-		cursor: pointer;
-		width: 35px;
-		z-index: 10;
-		/*position: relative;*/
-		margin-left: 0;
-		text-align: center;
-	}
+		.icona-menu{
+			cursor: pointer;
+			width: 35px;
+			z-index: 10;
+			/*position: relative;*/
+			margin-left: 0;
+			text-align: center;
+		}
 
-	.icona-menu-attivo{
-		display: none;
-		cursor: pointer;
-		width: 35px;
-		z-index: 9;
-		position: relative;
-	}
+		#header-2{
+			display: none;
+			background-color: #651D36;
+			position: fixed;
+			top:0;
+			width: 100%;
+			z-index: 10;
+			padding-top: 5px;
 
-	#header-2{
-		display: none;
-		background-color: #651D36;
-		position: fixed;
-		top:0;
-		width: 100%;
-		z-index: 10;
-		padding-top: 5px;
+			padding-bottom: 5px;
+			text-align: center;
+		}
 
-		padding-bottom: 5px;
-		text-align: center;
-	}
+		#header-2 h1{
+			color: white;
+			font-size: 1.7em;
+			/*margin-left: 50px;*/
+			margin-top: 5px;
+			margin-bottom: 0px;
+		}
 
-	#header-2 h1{
-		color: white;
-		font-size: 1.7em;
-		/*margin-left: 50px;*/
-		margin-top: 5px;
-		margin-bottom: 0px;
-	}
+		#header-2 h2{
+			color: white;
+			font-size: 0.6em;
+		}
 
-	#header-2 h2{
-		color: white;
-		font-size: 0.6em;
-	}
-
-	.icona-menu-2{
-		cursor: pointer;
-		width: 35px;
-		z-index: 10;
-		position: absolute;
-		left: 10px;
-		top: 10px;
-		margin-left: 0;
-		text-align: center;
-	} 
-
+		.icona-menu-2{
+			cursor: pointer;
+			width: 35px;
+			z-index: 10;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			margin-left: 0;
+			text-align: center;
+		} 
 
 	/******************************************
 	NAV
 	*******************************************/
 
-	nav{
-		padding: 5px 0;
-	}
+		nav{
+			padding: 5px 0;
+		}
 
-	nav li{
-		display: block; /*mostro orizzontalmente i box model*/
-		padding: 3%;
-	}
+		nav li{
+			display: block; /*mostro orizzontalmente i box model*/
+			padding: 3%;
+		}
 
-	.main-menu-2{
-		display: none;
-		position: absolute;
-		z-index: 10;
-	}
+		.main-menu-2{
+			display: none;
+			position: absolute;
+			z-index: 10;
+		}
 
-	.main-menu-2-top-border{
-		border-top: solid;
-		border-width: 2px; 
-		border-color: white;
-		
-	}
-
-	/******************************************
-	CONTACT
-	*******************************************/
-
-	#info{
-		float: none;
-		width: 100%;
-	}
-
-	#contatti{
-		float: none;
-		width: 100%;
-	}
-
-	#map{
-	/*background-color: yellow;*/
-		text-align: left;
-	}
+		.main-menu-2-top-border{
+			border-top: solid;
+			border-width: 2px; 
+			border-color: white;
+			
+		}
 
 	/******************************************
-	SECTION
+	SECTION ELEMENTS
 	*******************************************/
 
-	#gallery-home li{
-		width: 42%;
-		margin: 2%;
-		padding: 2% 2% 0 2%;
-	}
+		/******************************************
+		HOME PORTFOLIO LINKS
+		*******************************************/
 
-	.citazione-home{
-		font-size: 1.6em;
-	}
+			#gallery-home li{
+				width: 42%;
+				margin: 2%;
+				padding: 2% 2% 0 2%;
+			}
 
-	.banner1{
-		background-image: url(../img/parallax/parallax1-small.jpg);
-		background-attachment: initial;
-	}
+		/******************************************
+		CITAZIONE
+		*******************************************/
 
-	.banner2{
-		background-image: url(../img/parallax/parallax2-small.jpg);
-		background-attachment: initial;
-	}
+			.citazione-home{
+				font-size: 1.6em;
+			}
 
-	#biografia{
-		/*background-color: grey;*/
-		opacity: 0;
-		-webkit-transition: opacity 1s linear;
-	}
+		/******************************************
+		BIOGRAFIA
+		*******************************************/
 
-	#container-contatti{
-		/*background-color: red;*/
-		opacity: 0;
-		-webkit-transition: opacity 1s linear;
-	}
-	
+			#biografia{
+				/*background-color: grey;*/
+				opacity: 0;
+				-webkit-transition: opacity 1s linear;
+			}
 
+		/******************************************
+		CONTATTI
+		*******************************************/
+
+			#container-contatti{
+				/*background-color: red;*/
+				opacity: 0;
+				-webkit-transition: opacity 1s linear;
+			}
+
+			#info{
+				float: none;
+				width: 100%;
+			}
+
+			#contatti{
+				float: none;
+				width: 100%;
+			}
+
+			#map{
+			/*background-color: yellow;*/
+				text-align: left;
+			}
 
 	/******************************************
-	GALLERIA DI TEST
+	IMAGE ELEMENTS
 	*******************************************/
 
+		/******************************************
+		PARALLAX BANNER
+		*******************************************/
 
+			.banner1{
+				background-image: url(../img/parallax/parallax1-small.jpg);
+				background-attachment: initial;
+			}
+
+			.banner2{
+				background-image: url(../img/parallax/parallax2-small.jpg);
+				background-attachment: initial;
+			}
+
+		/******************************************
+		OPERE SINGOLE
+		*******************************************/
+
+			.opere-singole{
+				display: block;
+				text-align: center;
+			}
+
+			.opere-singole p {
+				text-align: center;
+			}
+
+			.opere-singole a img{
+				width: calc(100vw / 2);
+				height: calc(100vw / 2);
+				float: none;
+			}
+
+			.galleria-opere a img{
+				/*max-width: 33%;*/
+				/*transform: scale(0.5, 0.5);*/
+				width: calc(100vw / 4);
+				height: calc(100vw / 4);
+			}
+
+			.test-thumbnail{
+				max-width: 30%;
+				margin:1%;
+			}							
+
+		/******************************************
+		RIGA DI IMMAGINI ORIZZONTALE
+		*******************************************/
+
+			.tre-immagini img{
+				width: 31.4%;
+				margin: 0.5%;
+			}
 
 	/******************************************
 	FOOTER
 	*******************************************/
 
-	footer{
-		background-image: url("../img/template/footer-mobile.jpg");
-		background-repeat: no-repeat;
-		height: 136px;
-	}
+		footer{
+			background-image: url("../img/template/footer-mobile.jpg");
+			background-repeat: no-repeat;
+			height: 136px;
+		}
 
-	.social-copyright{
-		padding-top: 30px;
-	}
+		.social-copyright{
+			padding-top: 30px;
+		}
 
-	.icona-social{
-		width: 35px;
-		height: 35px;
-	}
-
-	/******************************************
-	PAGINA OPERE CON GALLERIA
-	*******************************************/
-
-	.opere-singole{
-		display: block;
-		text-align: center;
-	}
-
-	.opere-singole p {
-		text-align: center;
-	}
-
-	.opere-singole a img{
-		width: calc(100vw / 2);
-		height: calc(100vw / 2);
-		float: none;
-	}
-
-
-
-	.galleria-opere a img{
-		/*max-width: 33%;*/
-		/*transform: scale(0.5, 0.5);*/
-		width: calc(100vw / 4);
-		height: calc(100vw / 4);
-	}
-
-	.test-thumbnail{
-		max-width: 30%;
-		margin:1%;
-	}
-
-	/******************************************
-	IMMAGINI NELLE PAGINE
-	*******************************************/
-
-
-/*	.sei-immagini img{
-	width: 31.4%;
-	margin: 0.5%;
-}*/
-
-	.tre-immagini img{
-	width: 31.4%;
-	margin: 0.5%;
-
+		.icona-social{
+			width: 35px;
+			height: 35px;
+		}
 }
 
-
-
-}
-
-/******************************************************************* VERSIONE TABLET ***********************/
+/***********************************************************************************************************************
+************************************************** VERSIONE TABLET *****************************************************
+***********************************************************************************************************************/
 
 @media screen and (min-width: 661px) and (max-width: 900px) {
 
@@ -258,138 +253,87 @@
 	HEADER
 	*******************************************/
 
-	h1{
-		font-size: 7.0em;
-	}
+		h1{
+			font-size: 7.0em;
+		}
 
-	h2{
-		font-size: 2.0em; 
-	}
+		h2{
+			font-size: 2.0em; 
+		}
 
-	.container-icona-menu{
-		text-align: center;
-		padding-top: 15px;
-	}
+		.container-icona-menu{
+			text-align: center;
+			padding-top: 15px;
+		}
+
+	/******************************************
+	SECTION ELEMENTS
+	*******************************************/
+
+		/******************************************
+		BIOGRAFIA
+		*******************************************/
+
+			.foto-profilo{
+				float:left;
+				margin: 0 5% 5% 0;
+			}
+
+	/******************************************
+	IMAGE ELEMENTS
+	*******************************************/
+
+		/******************************************
+		PARALLAX BANNER
+		*******************************************/
+	
+		.banner1{
+			background-image: url(../img/parallax/parallax1-small.jpg);
+			background-attachment: initial;
+		}
+
+		.banner2{
+			background-image: url(../img/parallax/parallax2-small.jpg);
+			background-attachment: initial;
+		}
+
+		/******************************************
+		OPERE SINGOLE
+		*******************************************/
+
+			.galleria-opere a img{
+				/*max-width: 33%;*/
+				/*transform: scale(0.5, 0.5);*/
+				width: 150px;
+				height: 150px;
+			}
 
 	/******************************************
 	FOOTER
 	*******************************************/
 
-	.social-copyright{
-		padding-top: 50px;
-	}
-
-	/******************************************
-	BIOGRAFIA
-	*******************************************/
-
-	.foto-profilo{
-		float:left;
-		margin: 0 5% 5% 0;
-	}
-
-	/******************************************
-	CONTATTI
-	*******************************************/
-
-	/*I blocchi info e contatti vengono mostrati */
-	/*#info{
-		width: 50%;
-		float: left;
-	}
-	#contatti{
-		width:40%;
-		float: right; /*per sicurezza su alcuni browser*/
-
-	/******************************************
-	SECTION
-	*******************************************/
-
-	.banner1{
-		background-image: url(../img/parallax/parallax1-small.jpg);
-		background-attachment: initial;
-	}
-
-	.banner2{
-		background-image: url(../img/parallax/parallax2-small.jpg);
-		background-attachment: initial;
-	}
-
-	/******************************************
-	PAGINA OPERE CON GALLERIA
-	*******************************************/
-
-	.galleria-opere a img{
-		/*max-width: 33%;*/
-		/*transform: scale(0.5, 0.5);*/
-		width: 150px;
-		height: 150px;
-	}
-
-	
+		.social-copyright{
+			padding-top: 50px;
+		}
 
 }
 
-/******************************************************************* VERSIONE DESKTOP ***********************/
+/***********************************************************************************************************************
+************************************************** VERSIONE DESKTOP ****************************************************
+***********************************************************************************************************************/
 
 @media screen and (min-width: 901px){
 
 	/******************************************
-	GALLERIA DI TEST
+	SECTION ELEMENTS
 	*******************************************/
 
+		/******************************************
+		BIOGRAFIA
+		*******************************************/
 
-
-	/******************************************
-	BIOGRAFIA
-	*******************************************/
-
-		.foto-profilo{
-			float:left;
-			margin: 0 5% 5% 0;
-		}
-
-
-	/******************************************
-	PORTFOLIO
-	*******************************************/
-
-		#gallery-home li{
-			
-		}
-
-
-	/******************************************
-	HEADER
-	*******************************************/
-
-
-	/******************************************
-	NAV
-	*******************************************/
-
-	/*Nascondo il menu mobile e mostro quello desktop*/
-
-	/******************************************
-	CONTATTI
-	*******************************************/
-
-	/*I blocchi info e contatti vengono mostrati */
-	/*#info{
-		display: inline-block;
-		width: 50%;
-		float: left;
-	}
-	#contatti{
-		display: inline-block;
-		width:40%;
-		float: right; /*per sicurezza su alcuni browser*/
-
-	
-
-
-
-
-
-
+			.foto-profilo{
+				float:left;
+				margin: 0 5% 5% 0;
+			}
 }
