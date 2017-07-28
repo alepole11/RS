@@ -108,6 +108,14 @@
 			
 		}
 
+		.sub-menu {
+			display: block;
+		}
+
+		.child-menu{
+			position: relative;
+		}
+
 	/******************************************
 	SECTION ELEMENTS
 	*******************************************/
@@ -117,9 +125,16 @@
 		*******************************************/
 
 			#gallery-home li{
-				width: 46%;
-				margin: 2%;
-				padding: 2% 2% 0 2%;
+				margin: 1%;
+				padding: 1% 1% 0 1%;
+			}
+
+			.due-colonne li {
+				width: 48%;
+			}
+
+			.quattro-colonne li{
+				width: 23%;
 			}
 
 		/******************************************

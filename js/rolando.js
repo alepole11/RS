@@ -38,12 +38,19 @@
 				$(".effetto-opaco").toggleClass("show");
 				//$(".icona-menu-attivo").toggleClass("show");
 			});  
+			//menu mobile
 			$(".icona-menu-2").click(function() {
 				$(".main-menu-2").toggleClass("show");
 				$("body").toggleClass("stop-scrolling");
 				$('body').bind('touchmove', function(e){e.preventDefault()})
 				$(".effetto-opaco").toggleClass("show");
 				//$(".icona-menu-attivo").toggleClass("show");
+			}); 
+			//submenu
+			$(".parent-menu").click(function() {
+				$(".child-menu").toggleClass("show");
+				$("body").toggleClass("stop-scrolling");
+				$('body').bind('touchmove', function(e){e.preventDefault()});
 			}); 
 
 	    });

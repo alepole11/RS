@@ -35,7 +35,20 @@
 				<nav class="main-menu-2">
 				<div class="main-menu-2-top-border"></div>
 					<ul>
-						<li><a href="#anchor-opere">OPERE</a></li>
+						<div class="sub-menu">
+
+						<li><a class="parent-menu">OPERE</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
+						<div class="child-menu">
+							<li><a href="dipinti-olio-su-tela.html">OLIO SU TELA</a></li>
+							<li><a href="decorazioni-seta-tecnica-serti.html">SETA</a></li>
+							<li><a href="decorazioni-tessuti.html">TESSUTI</a></li>
+							<li><a href="installazioni-esposizioni-mostre.html">INSTALLAZIONI</a></li>
+							<li><a href="decorazioni-ombrelli-seta-raso-cotone.html">OMBRELLI</a></li>
+							<li><a href="decorazioni-accessori-scarpe.html">ACCESSORI</a></li>
+						</div>
+
+					</div>
+
 						<li><a href="#anchor-biografia">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
 						<li><a href="#">ESPOSIZIONI</a></li>
 						<li><a href="#anchor-info">CONTATTI</a></li>
@@ -45,7 +58,22 @@
 
 			<nav class="main-menu">
 				<ul>
-					<li><a href="#anchor-opere">OPERE</a></li>
+
+					<div class="sub-menu">
+
+						<li><a class="parent-menu">OPERE</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
+						<div class="child-menu">
+							<li><a href="dipinti-olio-su-tela.html">OLIO SU TELA</a></li>
+							<li><a href="decorazioni-seta-tecnica-serti.html">SETA</a></li>
+							<li><a href="decorazioni-tessuti.html">TESSUTI</a></li>
+							<li><a href="installazioni-esposizioni-mostre.html">INSTALLAZIONI</a></li>
+							<li><a href="decorazioni-ombrelli-seta-raso-cotone.html">OMBRELLI</a></li>
+							<li><a href="decorazioni-accessori-scarpe.html">ACCESSORI</a></li>
+						</div>
+
+					</div>
+
+
 					<li><a href="#anchor-biografia">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
 					<li><a href="#">ESPOSIZIONI</a></li>
 					<li><a href="#anchor-info">CONTATTI</a></li>
@@ -53,10 +81,8 @@
 			</nav>
 
 			<div class="wrapper clearfix"> <!--inserito dopo per racchiudere-->
-				
-					<a name="anchor-opere"></a>
 
-					<ul id=gallery-home class="clearfix">
+					<ul id=gallery-home class="due-colonne clearfix">
 						<li>
 							<a href="dipinti-olio-su-tela.html">
 								<img src="img/home/dipinti-olio-su-tela.jpg" alt="Dipinti Olio su tela">
@@ -69,6 +95,8 @@
 								<p>Seta</p>
 							</a>
 						</li>
+					</ul>
+					<ul id=gallery-home class="quattro-colonne clearfix">
 						<li>
 							<a href="decorazioni-tessuti.html">
 								<img src="img/home/tessuti-dipinti-mano.jpg" alt="Decorazioni su Tessuti">
@@ -98,11 +126,11 @@
 				
 			
 
-				<div class="citazione-home clearfix">
+				<section class="citazione-home clearfix">
 					<p>"In tutte le cose della natura esiste qualcosa di meraviglioso."</p>
-				</div>
+				</section>
 
-				<div class="paragrafo-testo">
+				<section class="paragrafo-testo">
 					<p>Nell’opera di Rolando Scaccabarozzi la natura si svela, si anima e diventa fonte di un sentimento di purezza ma anche di energia: fiori luminosi e freschi che riflettono la loro straordinaria bellezza.</p>
 
 					<p>La natura è “morta” solo nominativamente poiché lo straordinario vigore dell’artista le conferisce una vitalità insperata, che la fa addirittura uscire dalla tela che sembra incapace di contenerla, mettendola in viva relazione con l’ambiente e con chi la guarda.</p>
@@ -115,7 +143,7 @@
 
 					<p>L’effetto è realizzato anche grazie al particolare accostamento di tele diverse che regalano all’osservatore un’insieme di straordinaria vivacità.
 					</p>
-				</div>
+				</section>
 
 				<!--Parallax-->
 				<div class="banner1"></div>
@@ -160,30 +188,30 @@
 				<div class="banner2"></div>
 				<div class="post-banner"></div>
 
-				<div id=container-contatti>
-					<section class="info-contatti clearfix">
+				<section id=container-contatti>
+					<div class="info-contatti clearfix">
 					<a name="anchor-info"></a>
-						<section id=info>
+						<div id=info>
 							<h3>Info</h3>
 							<p><b>Rolando Scaccabarozzi</b></p>
 							<p>Pittore | Vetrinista | Decoratore su tessuto.</p>
 							<p>Si realizzano opere su commissione</p>
-						</section>
-						<section id=contatti>
+						</div>
+						<div id=contatti>
 							<h3>Contatti</h3>
 							<ul id=contact-info>
 								<li class="indirizzo"><a href="">Vimercate (MB) - Italy</a></li>
 								<li class="telefono"><a href="tel:+393487495307"> +39 3487495307</a></li>
 								<li class="email"><a href="mailto:scarox@libero.it"> scarox@libero.it</a></li>
 							</ul>
-						</section>
-					</section>
-					<section id=map>
+						</div>
+					</div>
+					<div id=map>
 						<h3>Mappa</h3>
 						<div id="mappa-google"></div>
 						<div id="post-mappa-google"></div>
-					</section>
-				</div>
+					</div>
+				</section>
 				
 					<img onclick="ScrollToTopFunction()" id="scrollToTopBtn" src="img/template/scroll-to-top.png">
 				
