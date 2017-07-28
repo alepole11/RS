@@ -167,13 +167,12 @@
 	document.onscroll = function() {
 		    		
 					displayToTopBtn();
-		    		if (effettoDelay('#biografia')) {
-		    			/*console.log('ho ricevuto true dalla funzione per BIOGRAFIA');*/
-		    			document.getElementById('biografia').style.opacity = '1';
-		    		};
-		    		if (effettoDelay('#container-contatti')) {
-		    			/*console.log('ho ricevuto true dalla funzione per CONTAINER-CONTATTI');*/
-		    			document.getElementById('container-contatti').style.opacity = '1';
+		    		//MOSTRO IL MENU SOTTILE SOLO SE LO SCHERMO é PICCOLO
+		    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
+		    			//console.log('Devo mostrare menu fisso');
+		    			document.getElementById('header-2').style.display = 'block';
+		    		} else {
+		    			document.getElementById('header-2').style.display = 'none';	
 		    		};
 		    	}
 	</script>
