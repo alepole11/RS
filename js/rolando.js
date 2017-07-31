@@ -46,7 +46,7 @@
 	    });
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
+window.on('touchstart click') = function(event) {
   if (!event.target.matches('.parent-menu')) {
 
   	console.log('sono fuori dal dropdown');
