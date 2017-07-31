@@ -62,41 +62,32 @@ GENERAL
 	}
 
 /******************************************
-HEADER - ALL OTHER PAGES
+HEADER
 *******************************************/
 
 	header {
-		background-color: #651D36;
-		opacity: 1;
-		/*background-image: url("../img/template/header-desktop-xl.jpg");
+		background-color: #fff;
+		background-image: url("../img/template/header-desktop-xl.jpg");
 		background-repeat: no-repeat;*/
 		/*filter: grayscale(50%);*/
-		height: 70px;
+		height: 289px;
 		margin: 0 0 0 0;  /*margine esterno al blocco*/
 		/*padding: 5px 0 5px 0;  /*margine interno al blocco*/
 		padding: 0 0;
 		/*overflow: auto; /*per evitare che sparisca con il logo a sinistra -- poi tolto per menu a tendina*/
-	    position: fixed;
-	    width: 100%;
-	    z-index: 9;
 	}
 
-	
-
 	#logo {
-		text-align: left; /*center*/
-		display: inline;
-		/*width: 100%;*/
-		
-		
+		text-align: center;
+		display: inline-block;
+		width: 100%;
 	}
 
 	h1 {
 		color: #fff;
 		font-family: 'Bilbo Swash Caps', cursive;
-		/*margin: 50px 0 -10px 0;*/
-		margin: 10px 0 0 10px;
-		font-size: 3.0em;  /*8.0*/
+		margin: 50px 0 -10px 0;
+		font-size: 8.0em;
 		font-weight: normal;
     	text-shadow: 4px 4px 4px #651D36;
 	}
@@ -111,18 +102,12 @@ HEADER - ALL OTHER PAGES
 	}
 
 	.container-icona-menu{
-		/*width: 100%;*/
-		display: inline;
-		float: left;
-		margin-left: 20px;
-		margin-top: 14px;
-		margin-right: 20px;
-
+		width: 100%;
 	}
 
 	.icona-menu{
 		cursor: pointer;
-		width: 40px;
+		width: 48px;
 		z-index: 20;
 		position: relative;
 		margin-left: 2%;
@@ -133,14 +118,13 @@ HEADER - ALL OTHER PAGES
 	}
 
 /******************************************
-NAV - ALL OTHER PAGES
+NAV
 *******************************************/
 
 	nav {
 		background-color: #651D36;
 		text-align: center;
 		position: absolute;
-		top: 67px;
 		padding: 25px 0;
 		display: block;
 		width: 100%;
@@ -185,7 +169,6 @@ NAV - ALL OTHER PAGES
 
 	.sub-menu {
 		display: inline-block;
-		margin-right: 1%;
 	}
 
 	.child-menu{
@@ -212,7 +195,6 @@ NAV - ALL OTHER PAGES
 		color: black; /* cambio colore quando il mouse passa sui link*/
 		font-size: bold;
 	}
-
 
 /******************************************
 SECTION ELEMENTS
@@ -397,27 +379,19 @@ IMAGE ELEMENTS
 			margin:0;
 			left: 0;
 			right: 0;
-			height: 100%;
-			/*height: 670px;
+			height: 670px;
 			margin-bottom: 50px;
-			margin-top: 50px;*/
+			margin-top: 50px;
 			text-align: center;
 		}
 
-		.banner1 .campitura1{
-			background-color: #000;
-			width: 100%;
-			height: 100%;
-			opacity: 0.3;
-		}
-
 		.banner1 .banner-caption{
-			/*height: 80px;*/
+			height: 80px;
 			width: 100%;
+			
 			position: absolute;
-			top: 50%;
-			/*top: 300px;*/
-			/*padding-top: 25px;*/
+			top: 300px;
+			padding-top: 25px;
 		}
 
 		.banner1 .banner-caption .caption-text{
@@ -432,24 +406,26 @@ IMAGE ELEMENTS
 		.w3-animate-opacity{animation:opac 2s}@keyframes opac{from{opacity:0} to{opacity:1}}
 		.w3-animate-opacity-3{animation:opac 3s}@keyframes opac{from{opacity:0} to{opacity:1}}
 
-		.freccia{
+		.campitura1{
+			background-color: #000;
 			width: 100%;
+			height: 670px;
+			opacity: 0.3;
+		}
+
+		.freccia{
 			position: absolute;
-			/*top: 550px;*/
+			top: 550px;
+			left: 680px;
+	    	
+			
 	    	transform: rotate(180deg);
-	    	animation: mymove 3s infinite;
 		}
 
 		.freccia img{
 			cursor: pointer; /* Add a mouse pointer on hover */
 	    	border-radius: 1000px; /* Rounded corners */
 		}
-
-		@keyframes mymove {
-		    0%   {top: 65%;}
-		    100%  {top: 85%;}
-		}
-
 
 		.banner2{
 			width: 100%;
