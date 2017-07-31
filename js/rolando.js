@@ -39,11 +39,58 @@
 			//submenu
 			$(".parent-menu").click(function() {
 				$(".child-menu").toggleClass("show");
-				$("body").toggleClass("stop-scrolling");
-				$('body').bind('touchmove', function(e){e.preventDefault()});
+				//$("body").toggleClass("stop-scrolling");
+				//$('body').bind('touchmove', function(e){e.preventDefault()});
 			}); 
 
 	    });
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.parent-menu')) {
+
+  	console.log('sono fuori dal dropdown');
+
+    var dropdowns = document.getElementsByClassName("child-menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  };
+
+  //applico anche al menu principale
+  if ((!event.target.matches('.icona-menu')) && (!event.target.matches('.parent-menu'))){
+
+  	console.log('sono fuori dal dropdown');
+
+    var dropdowns = document.getElementsByClassName("main-menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        $(".effetto-opaco").toggleClass("show");
+      }
+    }
+  };
+  //poi correggo effetto collaterale
+  /*if ((!event.target.matches('.icon')) && (!event.target.matches('.dropbtn'))) {
+
+  	console.log('ci sono');
+
+    var dropdowns = document.getElementsByClassName("topnav");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('responsive')) {
+        openDropdown.classList.remove('responsive');
+      }
+    }
+  }*/
+}
 
 
 //EFFETTO SCROLL PAGE SU LINK ANCORE
@@ -52,7 +99,7 @@
 					//$(".effetto-opaco").toggleClass("show");  l'avevo messo io???
 					//$(".main-menu").toggleClass("show");
 
-				if (document.body.scrollTop > 200) { //se sono sceso nella pagina, agisco solo su 2) quelli del menu fisso
+				if (document.body.scrollTop > 200 && !(this.hash == '#anchor-inizio-contenuto')) { //se sono sceso nella pagina, agisco solo su 2) quelli del menu fisso
 					$(".main-menu-2").toggleClass("show");
 					$(".effetto-opaco").toggleClass("show");
 				} else {
@@ -64,17 +111,20 @@
 					$(".main-menu").toggleClass("show");
 					$(".effetto-opaco").toggleClass("show");
 				}
-
 				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && 
 					location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-				$('html,body').animate({
-				scrollTop: target.offset().top
-				}, 1000);
-				return false;
-				}
+					var target = $(this.hash);
+					var x = 0;
+					if (this.hash == '#anchor-inizio-contenuto'){
+						x = 70;
+					}
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+						scrollTop: target.offset().top-x
+							}, 1000);
+						return false;
+					}
 				}
 				});
 				});	    	

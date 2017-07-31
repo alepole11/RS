@@ -16,7 +16,7 @@ HEADER - ALL OTHER PAGES
 	    position: fixed;
 	    top: 0;
 	    width: 100%;
-	    z-index: 9;
+	    z-index: 10;
 	}
 
 	#logo {
@@ -115,7 +115,7 @@ NAV - ALL OTHER PAGES
 		display: none;
 		background-color: #bfbfbf;
 		position: absolute;
-		margin-top: 30px;
+		margin-top: 25px;
 	}
 
 	.child-menu li{
@@ -173,6 +173,9 @@ NAV - ALL OTHER PAGES
 		.main-menu{
 			top: 50px;
 			padding: 5px 0;
+			border-top: solid;
+			border-top-width: 1px;
+			border-top-color: #ffffff;
 		}
 
 		nav li{
