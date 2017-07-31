@@ -6,18 +6,15 @@
 		<!--<link rel="shortcut icon" type="image/x-icon" href="">Favicon 16px png-->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css"><!--file di stile predefinito-->
 
-		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Great+Vibes" rel="stylesheet">
 		<!--Font di Google: importante posizionarlo qui!-->
 
 		 <!--foglio di stile principale-->
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/header-home.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 
 		<link rel="stylesheet" type="text/css" href="css/responsive.css"> <!--foglio di stile responsive-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Fondamentale per il rendering sugli schermi!!!-->
-
-		
-
 	</head>
 	<body class="homepage">
 		<div class="container">
@@ -31,34 +28,6 @@
 				<!--<img src="img/template/icona-menu-attivo.png" class="icona-menu-attivo">-->
 				<div class="effetto-opaco"></div>
 			</header>
-
-			<div id=header-2 class="clearfix">
-				<img src="img/template/icona-menu-white.png" class="icona-menu-2">
-				<h1>Potere ai Fiori</h1>
-				<h2>di ROLANDO SCACCABAROZZI</h2>
-				<nav class="main-menu-2">
-				<div class="main-menu-2-top-border"></div>
-					<ul>
-						<div class="sub-menu">
-
-						<li><a class="parent-menu">OPERE</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
-						<div class="child-menu">
-							<li><a href="dipinti-olio-su-tela.html">OLIO SU TELA</a></li>
-							<li><a href="decorazioni-seta-tecnica-serti.html">SETA</a></li>
-							<li><a href="decorazioni-tessuti.html">TESSUTI</a></li>
-							<li><a href="installazioni-esposizioni-mostre.html">INSTALLAZIONI</a></li>
-							<li><a href="decorazioni-ombrelli-seta-raso-cotone.html">OMBRELLI</a></li>
-							<li><a href="decorazioni-accessori-scarpe.html">ACCESSORI</a></li>
-						</div>
-
-					</div>
-
-						<li><a href="#anchor-biografia">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
-						<li><a href="#">ESPOSIZIONI</a></li>
-						<li><a href="#anchor-info">CONTATTI</a></li>
-					</ul>
-				</nav>
-			</div>
 
 			<nav class="main-menu">
 				<ul>
@@ -217,7 +186,7 @@
 					</div>
 				</section>
 				
-					<img onclick="ScrollToTopFunction()" id="scrollToTopBtn" src="img/template/scroll-to-top.png">
+					<img onclick="ScrollToTopFunction()" id="scrollToTopBtn" src="img/template/scroll-page-trasp.png">
 				
 			</div>
 
@@ -241,12 +210,12 @@
 		    		/*myFunction();*/
 		    		//console.log('partito onscroll');
 		    		//MOSTRO IL MENU SOTTILE SOLO SE LO SCHERMO é PICCOLO
-		    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
+		    		/*if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
 		    			//console.log('Devo mostrare menu fisso');
 		    			document.getElementById('header-2').style.display = 'block';
 		    		} else {
 		    			document.getElementById('header-2').style.display = 'none';	
-		    		};
+		    		};*/
 		    		
 					displayToTopBtn();
 		    		if (effettoDelay('#biografia')) {

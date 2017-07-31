@@ -1,0 +1,137 @@
+/******************************************
+HEADER - ALL OTHER PAGES
+*******************************************/
+
+	header {
+		background-color: #651D36;
+		opacity: 1;
+		/*background-image: url("../img/template/header-desktop-xl.jpg");
+		background-repeat: no-repeat;*/
+		/*filter: grayscale(50%);*/
+		height: 70px;
+		margin: 0 0 0 0;  /*margine esterno al blocco*/
+		/*padding: 5px 0 5px 0;  /*margine interno al blocco*/
+		padding: 0 0;
+		/*overflow: auto; /*per evitare che sparisca con il logo a sinistra -- poi tolto per menu a tendina*/
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    z-index: 9;
+	}
+
+	#logo {
+		text-align: left; /*center*/
+		display: inline;
+		/*width: 100%;*/
+	}
+
+	h1 {
+		color: #fff;
+		font-family: 'Bilbo Swash Caps', cursive;
+		/*margin: 50px 0 -10px 0;*/
+		margin: 10px 0 0 10px;
+		font-size: 3.0em;  /*8.0*/
+		font-weight: normal;
+    	text-shadow: 4px 4px 4px #651D36;
+	}
+
+	h2 {
+		color: #000;
+		font-family: "Arial Narrow", Arial, sans-serif;
+		/*margin: 15px 0 20px 0;*/
+		margin: 0;
+		font-size: 1.5em;
+		font-weight: normal;
+	}
+
+	.container-icona-menu{
+		/*width: 100%;*/
+		display: inline;
+		float: left;
+		margin-left: 20px;
+		margin-top: 14px;
+		margin-right: 20px;
+	}
+
+	.icona-menu{
+		cursor: pointer;
+		width: 40px;
+		z-index: 20;
+		position: relative;
+		margin-left: 2%;
+	}
+
+/******************************************
+NAV - ALL OTHER PAGES
+*******************************************/
+
+	.main-menu{
+		display: none;
+		position: fixed;
+		top: 70px;
+		background-color: #651D36;
+		text-align: center;
+		padding: 25px 0;
+		width: 100%;
+		z-index: 10;
+	}
+
+	nav a {/*tutti gli elementi "a" dentro "nav"*/
+		color: #FFFFFF;
+		font-size: normal;
+	}
+
+	nav ul{
+		list-style: none; /*elimino i ballet neri della lista*/
+		margin: 0; /*solo due valori sottindento che va su, dx e si ripete giu e sx*/
+		padding: 0; /*ul di default ha del padding a sinistra*/
+	}
+
+	nav li{
+		display: inline-block; /*mostro orizzontalmente i box model*/
+		padding: 0 1%;
+	}
+
+	nav a:hover{
+		color: #bfbfbf; /* cambio colore quando il mouse passa sui link*/
+		font-size: bold;
+	}
+
+	nav a.selected{
+		color: #bfbfbf;  /* coloro il link della pagina attivav*/
+		font-size: bold;
+	}
+
+	.parent-menu{
+		cursor: pointer;
+	}
+
+	.sub-menu {
+		display: inline-block;
+		margin-right: 1%;
+	}
+
+	.child-menu{
+		display: none;
+		background-color: #bfbfbf;
+		position: absolute;
+		margin-top: 30px;
+	}
+
+	.child-menu li{
+		display: block;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.child-menu li a{
+		color: #651D36;
+		font-size: bold;
+	}
+
+	.child-menu li a:hover{
+		color: black; /* cambio colore quando il mouse passa sui link*/
+		font-size: bold;
+	}

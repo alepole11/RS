@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
 		<!--Font di Google: importante posizionarlo qui!-->
 
+		<link rel="stylesheet" type="text/css" href="css/header-pages.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css"> <!--foglio di stile principale-->
 		<link rel="stylesheet" type="text/css" href="css/responsive.css"> <!--foglio di stile responsive-->
 
@@ -36,8 +37,6 @@
 						<h1>Potere ai Fiori</h1>
 						<!--<h2>di ROLANDO SCACCABAROZZI</h2>-->
 					</a>
-				
-				<!--<img src="img/template/icona-menu-attivo.png" class="icona-menu-attivo">-->
 				<div class="effetto-opaco"></div>
 			</header>
 
@@ -68,9 +67,6 @@
 				</nav>
 			</div>
 			-->
-
-
-
 			<nav class="main-menu">
 				<ul>
 					<div class="sub-menu">
@@ -221,15 +217,7 @@
 <!--CHIAMATA FUNZIONI DA ATTIVARE ALLO SCORRIMENTO PAGINA-->
 	<script>
 	document.onscroll = function() {
-		    		
 					displayToTopBtn();
-		    		//MOSTRO IL MENU SOTTILE SOLO SE LO SCHERMO é PICCOLO
-		    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
-		    			//console.log('Devo mostrare menu fisso');
-		    			document.getElementById('header-2').style.display = 'block';
-		    		} else {
-		    			document.getElementById('header-2').style.display = 'none';	
-		    		};
 		    	}
 	</script>
 
