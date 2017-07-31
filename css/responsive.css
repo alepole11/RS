@@ -102,9 +102,10 @@
 		PARALLAX BANNER
 		*******************************************/
 
-			.banner1{
-				
-			}							
+			.banner1 .banner-caption .caption-text{
+			    font-size: 30px;
+			    letter-spacing: 2px;
+		}						
 
 		/******************************************
 		RIGA DI IMMAGINI ORIZZONTALE

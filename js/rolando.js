@@ -37,13 +37,6 @@
 				//$('body').bind('touchmove', function(e){e.preventDefault()})
 				$(".effetto-opaco").toggleClass("show");
 			});  
-			//menu mobile
-			$(".icona-menu-2").click(function() {
-				$(".main-menu-2").toggleClass("show");
-				$("body").toggleClass("stop-scrolling");
-				$('body').bind('touchmove', function(e){e.preventDefault()})
-				$(".effetto-opaco").toggleClass("show");
-			}); 
 			//submenu
 			$(".parent-menu").click(function() {
 				$(".child-menu").toggleClass("show");
@@ -59,17 +52,20 @@
 				$('a[href*=#]:not([href=#])').click(function() {
 					//$(".effetto-opaco").toggleClass("show");  l'avevo messo io???
 					//$(".main-menu").toggleClass("show");
-				if (document.body.scrollTop > 200){ //se sono sceso nella pagina, agisco solo su 2) quelli del menu fisso
+
+				if (document.body.scrollTop > 200) { //se sono sceso nella pagina, agisco solo su 2) quelli del menu fisso
 					$(".main-menu-2").toggleClass("show");
-					$("body").toggleClass("stop-scrolling");
-					$('body').unbind('touchmove');
 					$(".effetto-opaco").toggleClass("show");
 				} else {
 					$(".main-menu").toggleClass("show");
-					$("body").toggleClass("stop-scrolling");
-					$('body').unbind('touchmove');
 					$(".effetto-opaco").toggleClass("show");
 				}
+
+				if (this.hash == '#anchor-inizio-contenuto'){
+					$(".main-menu").toggleClass("show");
+					$(".effetto-opaco").toggleClass("show");
+				}
+
 				if (location.pathname.replace(/^\//,") == this.pathname.replace(/^\//,") && 
 					location.hostname == this.hostname) {
 				var target = $(this.hash);
