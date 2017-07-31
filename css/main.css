@@ -422,10 +422,10 @@ IMAGE ELEMENTS
 	
 
 		.w3-col{
-			padding:0 0 0 0
+			padding:0 8px;
 		}
 
-		.sinistra{
+		/*.sinistra{
 			padding-right: 8px;
 		}
 
@@ -436,7 +436,7 @@ IMAGE ELEMENTS
 		.centro{
 			padding-right: 8px;
 			padding-left: 8px;
-		}
+		}*/
 
 		/*.w3-row-padding:after,.w3-row-padding:before{content:"";display:table;clear:both}*/
 
