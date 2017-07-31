@@ -46,7 +46,7 @@
 	    });
 
 // Close the dropdown menu if the user clicks outside of it
-window.on('touchstart click') = function(event) {
+window.ontouchstart = function(event) {
   if (!event.target.matches('.parent-menu')) {
 
   	console.log('sono fuori dal dropdown');
@@ -76,20 +76,6 @@ window.on('touchstart click') = function(event) {
       }
     }
   };
-  //poi correggo effetto collaterale
-  /*if ((!event.target.matches('.icon')) && (!event.target.matches('.dropbtn'))) {
-
-  	console.log('ci sono');
-
-    var dropdowns = document.getElementsByClassName("topnav");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('responsive')) {
-        openDropdown.classList.remove('responsive');
-      }
-    }
-  }*/
 }
 
 
