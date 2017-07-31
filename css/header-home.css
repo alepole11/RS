@@ -40,7 +40,6 @@ HEADER
 
 	.container-icona-menu{
 		width: 100%;
-
 	}
 
 	.icona-menu{
@@ -123,3 +122,64 @@ NAV
 		color: black; /* cambio colore quando il mouse passa sui link*/
 		font-size: bold;
 	}
+
+/***********************************************************************************************************************
+************************************************** VERSIONE SMARTPHONE *************************************************
+***********************************************************************************************************************/
+
+@media screen and (min-width: 250px) and (max-width: 660px){
+
+/******************************************
+	HEADER
+	*******************************************/
+
+		header {
+			background-image: url("../img/template/header-mobile.jpg");
+			background-repeat: no-repeat;
+			height: 192px;
+		}
+
+		h1{
+			font-size: 4.2em;
+			margin-top: 30px;
+		}
+
+		h2{
+			font-size: 1.2em; 
+		}
+
+		.container-icona-menu{
+			text-align: center;
+			padding-top: 10px;
+		}
+
+		.icona-menu{
+			width: 35px;
+			z-index: 10;
+			/*position: relative;*/
+			margin-left: 0;
+			text-align: center;
+		}
+
+	/******************************************
+	NAV
+	*******************************************/
+
+		.main-menu{
+			padding: 5px 0;
+		}
+
+		nav li{
+			display: block; /*mostro orizzontalmente i box model*/
+			padding: 3%;
+		}
+
+		.sub-menu {
+			display: block;
+		}
+
+		.child-menu{
+			position: relative;
+		}
+
+}

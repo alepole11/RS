@@ -22,47 +22,13 @@
 	HEADER
 	*******************************************/
 
-		header {
-			height: 50px;
-		}
-
-		h1{
-			font-size: 2.0em;
-			text-align: center;
-		}
-
-		.container-icona-menu{
-			position: absolute;
-			margin-top: 8px;
-			margin-left: 8px;
-		}
-
-		.icona-menu{
-			width: 35px;
-		}
-
+	/*see detailed CSS for home and other pages*/
 		
 	/******************************************
 	NAV
 	*******************************************/
 
-		.main-menu{
-			top: 50px;
-			padding: 5px 0;
-		}
-
-		nav li{
-			display: block; /*mostro orizzontalmente i box model*/
-			padding: 3%;
-		}
-
-		.sub-menu {
-			display: block;
-		}
-
-		.child-menu{
-			position: relative;
-		}
+	/*see detailed CSS for home and other pages*/
 
 	/******************************************
 	SECTION ELEMENTS
@@ -179,10 +145,6 @@
 	HEADER
 	*******************************************/
 
-		.container-icona-menu{
-		
-		}
-
 	/******************************************
 	SECTION ELEMENTS
 	*******************************************/
@@ -203,10 +165,6 @@
 		/******************************************
 		PARALLAX BANNER
 		*******************************************/
-	
-		.banner1{
-			
-		}
 
 	/******************************************
 	FOOTER

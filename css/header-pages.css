@@ -135,3 +135,57 @@ NAV - ALL OTHER PAGES
 		color: black; /* cambio colore quando il mouse passa sui link*/
 		font-size: bold;
 	}
+
+/***********************************************************************************************************************
+************************************************** VERSIONE SMARTPHONE *************************************************
+***********************************************************************************************************************/
+
+@media screen and (min-width: 250px) and (max-width: 660px){
+
+	/******************************************
+	HEADER
+	*******************************************/
+
+		header {
+			height: 50px;
+		}
+
+		h1{
+			font-size: 2.0em;
+			text-align: center;
+		}
+
+		.container-icona-menu{
+			position: absolute;
+			margin-top: 8px;
+			margin-left: 8px;
+		}
+
+		.icona-menu{
+			width: 35px;
+		}
+
+		
+	/******************************************
+	NAV
+	*******************************************/
+
+		.main-menu{
+			top: 50px;
+			padding: 5px 0;
+		}
+
+		nav li{
+			display: block; /*mostro orizzontalmente i box model*/
+			padding: 3%;
+		}
+
+		.sub-menu {
+			display: block;
+		}
+
+		.child-menu{
+			position: relative;
+		}
+		
+}
