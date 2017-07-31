@@ -245,28 +245,46 @@ IMAGE ELEMENTS
 *******************************************/
 
 	/******************************************
-	PARALLAX BANNER
+	BANNER
+	*******************************************/
+
+	.parallax-container {
+		  height: 500px;
+		  width: 100%;
+		}
+
+	/******************************************
+	BANNER
 	*******************************************/
 
 		.banner1{
 			width: 100%;
 			text-align: center;
+			position: relative;
+			margin:0;
+			top:0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			text-align: center;
+		}
+
+		/*.banner1{
+			width: 100%;
+			text-align: center;
 			background-image: url(../img/parallax/parallax1.jpg);
-			background-size: cover; /*scala immagine*/
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
 			background-attachment: fixed;
 			position: relative;
 			margin:0;
-			top:0; /*parte da inizio pagina (restando dietro ad header*/
+			top:0;
 			left: 0;
 			right: 0;
 			height: 100%;
-			/*height: 670px;
-			margin-bottom: 50px;
-			margin-top: 50px;*/
 			text-align: center;
-		}
+		}*/
 
 		.banner1 .campitura1{
 			background-color: #000;

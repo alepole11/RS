@@ -2,7 +2,6 @@
 
 
 
-
 //MOSTRA IL PULSATE TO TOP
 			// When the user scrolls down 20px from the top of the document, show the button
 			// Modificata per poter (poi) nascondere bottone quando sono nel footer
