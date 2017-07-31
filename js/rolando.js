@@ -33,10 +33,9 @@
 			//When btn is clicked
 			$(".icona-menu").click(function() {
 				$(".main-menu").toggleClass("show");
-				$("body").toggleClass("stop-scrolling");
-				$('body').bind('touchmove', function(e){e.preventDefault()})
+				//$("body").toggleClass("stop-scrolling");
+				//$('body').bind('touchmove', function(e){e.preventDefault()})
 				$(".effetto-opaco").toggleClass("show");
-				//$(".icona-menu-attivo").toggleClass("show");
 			});  
 			//menu mobile
 			$(".icona-menu-2").click(function() {
@@ -44,7 +43,6 @@
 				$("body").toggleClass("stop-scrolling");
 				$('body').bind('touchmove', function(e){e.preventDefault()})
 				$(".effetto-opaco").toggleClass("show");
-				//$(".icona-menu-attivo").toggleClass("show");
 			}); 
 			//submenu
 			$(".parent-menu").click(function() {

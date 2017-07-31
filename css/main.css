@@ -2,6 +2,10 @@
 GENERAL
 *******************************************/
 
+	html, body{
+		height: 100%;  /*settando il 100% posso applicare il 100% di altezza ai banner*/
+	}
+
 	a {
 		text-decoration: none;
 	}
@@ -50,7 +54,7 @@ GENERAL
 	    z-index: 99; /* Make sure it does not overlap */
 	    border: none; /* Remove borders */
 	    outline: none; /* Remove outline */
-	    background-color: none; /* Set a background color */
+	    background-color: #000; /* Set a background color */
 	    cursor: pointer; /* Add a mouse pointer on hover */
 	    border-radius: 100px; /* Rounded corners */
 	    opacity: 0.6;
@@ -77,6 +81,7 @@ HEADER - ALL OTHER PAGES
 		padding: 0 0;
 		/*overflow: auto; /*per evitare che sparisca con il logo a sinistra -- poi tolto per menu a tendina*/
 	    position: fixed;
+	    top: 0;
 	    width: 100%;
 	    z-index: 9;
 	}
@@ -136,13 +141,13 @@ HEADER - ALL OTHER PAGES
 NAV - ALL OTHER PAGES
 *******************************************/
 
-	nav {
+	.main-menu{
+		display: none;
+		position: fixed;
+		top: 70px;
 		background-color: #651D36;
 		text-align: center;
-		position: absolute;
-		top: 67px;
 		padding: 25px 0;
-		display: block;
 		width: 100%;
 		z-index: 10;
 	}
@@ -171,12 +176,6 @@ NAV - ALL OTHER PAGES
 	nav a.selected{
 		color: #bfbfbf;  /* coloro il link della pagina attivav*/
 		font-size: bold;
-	}
-
-	.main-menu{
-		display: none;
-		position: absolute;
-		z-index: 10;
 	}
 
 	.parent-menu{
@@ -221,7 +220,7 @@ SECTION ELEMENTS
 	.wrapper{
 		max-width: 940px;
 		margin:0 auto 0 auto; /*si accentra*/
-		padding:0;  /*% sull'orizzontale per essere responsive*/
+		padding:20px 0 20px 0;  /*eventuale % sull'orizzontale per essere responsive*/
 	}
 
 	section{
@@ -393,8 +392,9 @@ IMAGE ELEMENTS
 			background-repeat: no-repeat;
 			background-position: center;
 			background-attachment: fixed;
-			position: absolute;
+			position: relative;
 			margin:0;
+			top:0; /*parte da inizio pagina (restando dietro ad header*/
 			left: 0;
 			right: 0;
 			height: 100%;
@@ -466,11 +466,6 @@ IMAGE ELEMENTS
 			height: 300px;
 			margin-bottom: 50px;
 			margin-top: 50px;
-		}
-
-		/*Parallax*/
-		.post-banner{
-			height: 733px; /*non usato se non è a tutto schermo il parallax*/
 		}
 
 	/******************************************
