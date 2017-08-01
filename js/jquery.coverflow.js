@@ -117,15 +117,15 @@
 				}
 			});
 
-			// Mousewheel
-			that.element.on(wheelEvents, function(event) {
+			// Mousewheel  DISABLED BY APOLETTI
+			/*that.element.on(wheelEvents, function(event) {
 				if (that.options.enableWheel) {
 					var delta = getWheel(event) > 0 ? 1 : -1;
 
 					event.preventDefault();
 					that._setIndex(that.options.index - delta, true);
 				}
-			});
+			});*/
 
 			// Swipe
 			if ($.isFunction(that.element.swipe)) {
