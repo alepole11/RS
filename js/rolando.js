@@ -47,6 +47,7 @@
 
 // Close the dropdown menu if the user clicks outside of it
 window.ontouchstart = function(event) {
+//window.onclick = function(event) {
   if (!event.target.matches('.parent-menu')) {
 
   	console.log('sono fuori dal dropdown');

@@ -71,64 +71,62 @@ NAV - ALL OTHER PAGES
 		top: 70px;
 		background-color: #651D36;
 		text-align: center;
-		padding: 25px 0;
+		padding: 0;
 		width: 100%;
 		z-index: 10;
 	}
 
-	nav a {/*tutti gli elementi "a" dentro "nav"*/
-		color: #FFFFFF;
-		font-size: normal;
+	.voci-menu{
+		display: inline-block;
+		min-width:420px;
 	}
 
-	nav ul{
-		list-style: none; /*elimino i ballet neri della lista*/
-		margin: 0; /*solo due valori sottindento che va su, dx e si ripete giu e sx*/
-		padding: 0; /*ul di default ha del padding a sinistra*/
+	/**/
+
+	.main-menu a {
+	    float: left;
+	    display: inline-block;
+	    color: #f2f2f2;
+	    text-align: center;
+	    padding: 15px 16px;
+	    text-decoration: none;
+	    font-size: 17px;
+	    margin-bottom: -3px;
 	}
 
-	nav li{
-		display: inline-block; /*mostro orizzontalmente i box model*/
-		padding: 0 1%;
+	.main-menu a:hover {
+	    background-color: #ddd;
+	    color: black;
 	}
 
-	nav a:hover{
-		color: #bfbfbf; /* cambio colore quando il mouse passa sui link*/
-		font-size: bold;
-	}
+	/**/
 
-	nav a.selected{
-		color: #bfbfbf;  /* coloro il link della pagina attivav*/
-		font-size: bold;
+	.sub-menu{
+		display: block;
+		margin-right: 1%;
 	}
 
 	.parent-menu{
 		cursor: pointer;
 	}
 
-	.sub-menu {
-		display: inline-block;
-		margin-right: 1%;
-	}
-
 	.child-menu{
 		display: none;
 		background-color: #bfbfbf;
 		position: absolute;
-		margin-top: 25px;
+		margin-top: 49px;
+		width: 180px;
 	}
 
-	.child-menu li{
+	.child-menu a{
 		display: block;
 		padding-left: 30px;
 		padding-right: 30px;
 		padding-top: 10px;
 		padding-bottom: 10px;
-	}
-
-	.child-menu li a{
 		color: #651D36;
 		font-size: bold;
+		width: 100%;
 	}
 
 	.child-menu li a:hover{
@@ -173,22 +171,34 @@ NAV - ALL OTHER PAGES
 		.main-menu{
 			top: 50px;
 			padding: 5px 0;
-			border-top: solid;
+			/*border-top: solid;
 			border-top-width: 1px;
-			border-top-color: #ffffff;
+			border-top-color: #ffffff;*/
 		}
 
-		nav li{
-			display: block; /*mostro orizzontalmente i box model*/
-			padding: 3%;
+		.voci-menu{
+			display: block;
+			width: 100%;
+			margin-bottom: -5px;
+			margin-top: -5px;
+		}
+
+		.main-menu a {
+			float: none;
+		    display: block;
+		    width: 100%;
 		}
 
 		.sub-menu {
 			display: block;
+			width: 100%;
 		}
 
 		.child-menu{
 			position: relative;
+			width: 100%;
+			top: -46px;
+			margin-bottom: -46px;
 		}
 		
 }
