@@ -86,7 +86,8 @@ SECTION ELEMENTS
 *******************************************/
 
 	.wrapper{
-		max-width: 940px;
+		/*max-width: 940px;*/
+		max-width: 800px;
 		margin:0 auto 0 auto; /*si accentra*/
 		padding:20px 0 20px 0;  /*eventuale % sull'orizzontale per essere responsive*/
 	}
