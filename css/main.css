@@ -14,6 +14,10 @@ GENERAL
 		text-align: justify;
 	}
 
+	h2{
+		text-align: center;
+	}
+
 	.effetto-opaco{
 		display: none;
 		opacity:    0.8; 
