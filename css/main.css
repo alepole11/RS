@@ -499,6 +499,10 @@ IMAGE ELEMENTS
 	RIGA DI IMMAGINI ORIZZONTALE
 	*******************************************/
 
+		.wrapper{
+			background-color: grey;
+		}
+
 		.sei-immagini{
 			margin: 0;
 			padding: 0;
@@ -523,9 +527,18 @@ IMAGE ELEMENTS
 		}
 
 		.tre-immagini img{
-			width: 32%;
+			width: 32.66666666666666667%;
 			margin: 0.5%;
 		}
+
+		.tre-immagini .prima-immagine{
+			margin-left: 0;
+		}
+
+		.tre-immagini .ultima-immagine{
+			margin-right: 0;
+		}
+
 
 /******************************************
 FOOTER
