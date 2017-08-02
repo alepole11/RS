@@ -119,6 +119,7 @@ window.onclick = function(event) {
 //EFFETTO APPARIZIONE CONTENUTO MENTRE STAI SCORRENDO LA PAGINA
 
 	    	function effettoDelay(elem) {
+	    		//console.log('effettoDelay');
 	    		var docViewTop = $(window).scrollTop();
 			    var docViewBottom = docViewTop + $(window).height();
 			    var elemTop = $(elem).offset().top;
@@ -131,7 +132,10 @@ window.onclick = function(event) {
 //CAROUSEL
 
 var slideIndex = 1;
-showSlides(slideIndex);
+try {
+	showSlides(slideIndex);} 
+catch(e) {
+	console.log('Salto showSlides')}
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -155,7 +159,42 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
+};
+
+
+//CAROUSEL 2
+
+var slideIndex = 1;
+try{
+	showSlides2(slideIndex);}
+catch(e){
+	console.log('Salto showSlides2')
 }
+
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("myCarousel2");
+  var dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active2";
+}
+
 
 //OTHER SLIDESHOW
 
