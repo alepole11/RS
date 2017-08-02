@@ -82,8 +82,7 @@ GENERAL
 		    background-color: white;
 		    z-index: 99; /* Higher than anything else in the document */
 		    opacity: 1;
-		    -webkit-transition: opacity 1s linear;
-
+		    -webkit-transition: opacity 0.5s linear;*/
 		}
 
 		#loader {
@@ -97,8 +96,6 @@ GENERAL
 		    border: 16px solid #f3f3f3;
 		    border-radius: 50%;
 		    border-top: 16px solid #651D36;
-		    width: 120px;
-		    height: 120px;
 		    -webkit-animation: spin 2s linear infinite;
 		    animation: spin 2s linear infinite;
 		}
@@ -111,6 +108,10 @@ GENERAL
 		@keyframes spin {
 		   0% { transform: rotate(0deg); }
 		   100% { transform: rotate(360deg); }
+		}
+
+		#page{
+			/*DA IMPLEMENTARE: apparizione pagina in transizione dopo il loader; capire come mai i parallax stanno fuori*/
 		}
 
 /******************************************
