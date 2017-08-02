@@ -42,6 +42,7 @@ HEADER
 
 	.container-icona-menu{
 		width: 100%;
+		visibility: hidden;
 	}
 
 	.icona-menu{
@@ -60,7 +61,7 @@ NAV
 		background-color: #651D36;
 		text-align: center;
 		position: absolute;
-		display: none;     /*none*/
+		display: block;     /*none*/
 		padding: 0;
 		width: 100%;
 		z-index: 10;
@@ -151,6 +152,7 @@ NAV
 		}
 
 		.container-icona-menu{
+			visibility: visible;
 			text-align: center;
 			padding-top: 10px;
 		}
@@ -166,6 +168,10 @@ NAV
 	/******************************************
 	NAV
 	*******************************************/
+
+		.main-menu {
+			display: none; 
+		}
 
 		.voci-menu{
 			display: block;

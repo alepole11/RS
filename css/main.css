@@ -195,6 +195,12 @@ SECTION ELEMENTS
 	HOME PORTFOLIO LINKS NEW
 	*******************************************/
 
+		.portfolio-home{
+			position: relative;
+			top:50px;
+			margin-bottom: 40px;
+		}
+
 		.parallax-home{
 			width: 100%;
 			text-align: center;
@@ -205,21 +211,19 @@ SECTION ELEMENTS
 			height: 200px;
 			text-align: center;
 		}
-
-		.segnaposto-parallax{
-			position: relative;
-			height: 440px;
-		}
-
 		
 		.parallax-home .banner-caption{
 			/*height: 80px;*/
-			width: 100%;
-			position: absolute;
+			display: inline-block;
+			position: relative;
 			top: 50%;
-			margin-top: 
+			margin-top: -20px; 
+			padding: 0 5px 0 5px;
 			/*top: 300px;*/
 			/*padding-top: 25px;*/
+			border-style: solid;
+			border-width: 2px;
+			border-color: #fff;
 		}
 
 		.parallax-home .banner-caption .caption-text{
@@ -230,30 +234,6 @@ SECTION ELEMENTS
 		    text-transform: uppercase;
 		    font-weight: normal;
 		}
-
-
-
-
-
-		.portfolio{
-			background-color: grey;
-		}
-
-		.portfolio-image{
-			height: 300px;
-			margin-bottom: 10px;
-
-		}
-		
-		.portfolio a{
-			display: block;
-			color: #fff;
-			text-align: center;
-			position: relative;
-			margin-bottom: 50px;
-		}
-
-
 
 	/******************************************
 	CITAZIONE

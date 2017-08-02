@@ -64,6 +64,25 @@
 			}
 
 		/******************************************
+		HOME PORTFOLIO LINKS NEW
+		*******************************************/
+
+			.portfolio-home{
+				top:0;
+			}
+			
+			.parallax-home .banner-caption{
+				/*height: 80px;*/
+				margin-top: -15px; 
+				/*top: 300px;*/
+				/*padding-top: 25px;*/
+			}
+
+			.parallax-home .banner-caption .caption-text{
+			    font-size: 30px;
+			}
+
+		/******************************************
 		CITAZIONE
 		*******************************************/
 
