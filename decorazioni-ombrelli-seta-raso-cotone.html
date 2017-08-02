@@ -6,10 +6,10 @@
 		<!--<link rel="shortcut icon" type="image/x-icon" href="">Favicon 16px png-->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css"><!--file di stile predefinito-->
 
-		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
 		<!--Font di Google: importante posizionarlo qui!-->
 
+		<link rel="stylesheet" type="text/css" href="css/header-pages.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css"> <!--foglio di stile principale-->
 		<link rel="stylesheet" type="text/css" href="css/responsive.css"> <!--foglio di stile responsive-->
 
@@ -23,129 +23,68 @@
 
 	</head>
 	<body>
+
+	<div  id="hideAll"><div id="loader"></div></div>
+	<!--<div id="page"><!--DA IMPLEMENTARE: apparizione pagina in transizione dopo il loader; capire come mai i parallax stanno fuori-->
+		<!--<div class="banner1">-->
+		<div class="banner1" data-parallax="scroll" data-image-src="img/parallax/dipinto-olio-tela-fiori-magnolia-bianchi-parallax-large.jpg" alt="Fiori di magnolia color bianco dipinti olio su tela">
+			<div class="campitura1 clearfix"></div>
+			<div class="banner-caption clearfix"><span class="caption-text w3-animate-opacity">Ombrelli</span></div>
+			<div class="freccia w3-animate-opacity-3"><a href="#anchor-inizio-contenuto"><img src="img/template/scroll-page-trasp.png"></a></div>
+		</div>
+
 		<div class="container">
 			<header class="clearfix">
 				<!--<div id="container-titolo">-->
+				<div class="container-icona-menu"><img src="img/template/icona-menu-white.png" class="icona-menu"></div>
 					<a href="index.html" id=logo>
 						<h1>Potere ai Fiori</h1>
-						<h2>di ROLANDO SCACCABAROZZI</h2>
+						<!--<h2>di ROLANDO SCACCABAROZZI</h2>-->
 					</a>
-				<div class="container-icona-menu"><img src="img/template/icona-menu.png" class="icona-menu"></div>
-				<!--<img src="img/template/icona-menu-attivo.png" class="icona-menu-attivo">-->
 				<div class="effetto-opaco"></div>
 			</header>
 
-			<div id=header-2 class="clearfix">
-				<img src="img/template/icona-menu-white.png" class="icona-menu-2">
-				<h1>Potere ai Fiori</h1>
-				<h2>di ROLANDO SCACCABAROZZI</h2>
-				<nav class="main-menu-2">
-				<div class="main-menu-2-top-border"></div>
-					<ul>
-						<div class="sub-menu">
-
-						<li><a class="parent-menu">OPERE</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
-						<div class="child-menu">
-							<li><a href="dipinti-olio-su-tela.html">OLIO SU TELA</a></li>
-							<li><a href="decorazioni-seta-tecnica-serti.html">SETA</a></li>
-							<li><a href="decorazioni-tessuti.html">TESSUTI</a></li>
-							<li><a href="installazioni-esposizioni-mostre.html">INSTALLAZIONI</a></li>
-							<li><a href="decorazioni-ombrelli-seta-raso-cotone.html">OMBRELLI</a></li>
-							<li><a href="decorazioni-accessori-scarpe.html">ACCESSORI</a></li>
-						</div>
-
-						</div>
-						<li><a href="index.html">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
-						<li><a href="#">ESPOSIZIONI</a></li>
-						<li><a href="index.html">CONTATTI</a></li>
-					</ul>
-				</nav>
-			</div>
-
 			<nav class="main-menu">
-				<ul>
+				<div class="voci-menu">
 					<div class="sub-menu">
 
-						<li><a class="parent-menu">OPERE</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
+						<a class="parent-menu">OPERE</a> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
 						<div class="child-menu">
-							<li><a href="dipinti-olio-su-tela.html">OLIO SU TELA</a></li>
-							<li><a href="decorazioni-seta-tecnica-serti.html">SETA</a></li>
-							<li><a href="decorazioni-tessuti.html">TESSUTI</a></li>
-							<li><a href="installazioni-esposizioni-mostre.html">INSTALLAZIONI</a></li>
-							<li><a href="decorazioni-ombrelli-seta-raso-cotone.html">OMBRELLI</a></li>
-							<li><a href="decorazioni-accessori-scarpe.html">ACCESSORI</a></li>
+							<a href="dipinti-olio-su-tela.html">OLIO SU TELA</a>
+							<a href="decorazioni-seta-tecnica-serti.html">SETA</a>
+							<a href="decorazioni-tessuti.html">TESSUTI</a>
+							<a href="installazioni-esposizioni-mostre.html">INSTALLAZIONI</a>
+							<a href="decorazioni-ombrelli-seta-raso-cotone.html">OMBRELLI</a>
+							<a href="decorazioni-accessori-scarpe.html">ACCESSORI</a>
 						</div>
 
 					</div>
-					<li><a href="index.html">BIOGRAFIA</a></li> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
-					<li><a href="#">ESPOSIZIONI</a></li>
-					<li><a href="index.html">CONTATTI</a></li>
-				</ul>
+					<a href="index.html">BIOGRAFIA</a> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
+					<a href="#">ESPOSIZIONI</a>
+					<a href="index.html">CONTATTI</a>
+				</div>
 			</nav>
 
 			<div class="wrapper clearfix"> <!--inserito dopo per racchiudere-->
 
-				<h3 style="text-align: center;"> Decorazioni su Ombrelli </h3>
+				<a name="anchor-inizio-contenuto"></a>
 
-				<div class="sei-immagini">
-					<img src="img/sample/immagine_quadrata1.jpg" class="prima-immagine"><!--
-					--><img src="img/sample/immagine_quadrata2.jpg"><!--
-					--><img src="img/sample/immagine_quadrata3.jpg"><!--
-					--><img src="img/sample/immagine_quadrata1.jpg"><!--
-					--><img src="img/sample/immagine_quadrata2.jpg"><!--
-					--><img src="img/sample/immagine_quadrata3.jpg" class="ultima-immagine">
-				</div>
+				
 
+				
 				<div class="paragrafo-testo">
+				<h2> Decorazioni su Ombrelli </h2>
 					<p>La decorazione degli ombrelli nasce come gioco, per l'allestimento di una vetrina di un negozio di abbigliamento e accessori. L'interesse e l'apprezzamento dell'idea portano Rolando a dipingere numerosissimi ombrelli, in cotone o in raso di seta, impreziosendo momenti importanti per amici, conoscenti e non.</p>
 				</div>
 
-				<!--CAROUSEL START-->
-
-				<div class="slideshow-container">
-				  <div class="myCarousel fade">
-				    <div class="numbertext">1 / 3</div>
-				    <img src="img/sample/carousel_001.jpg" style="width:100%">
-				    <div class="text">Caption Text</div>
-				  </div>
-
-				  <div class="myCarousel fade">
-				    <div class="numbertext">2 / 3</div>
-				    <img src="img/sample/carousel_002.jpg" style="width:100%">
-				    <div class="text">Caption Two</div>
-				  </div>
-
-				  <div class="myCarousel fade">
-				    <div class="numbertext">3 / 3</div>
-				    <img src="img/sample/carousel_003.jpg" style="width:100%">
-				    <div class="text">Caption Three</div>
-				  </div>
-
-				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
-				<br>
-
-				<div style="text-align:center">
-				  <span class="dot" onclick="currentSlide(1)"></span> 
-				  <span class="dot" onclick="currentSlide(2)"></span> 
-				  <span class="dot" onclick="currentSlide(3)"></span> 
-				</div>
-
-				<!--CAROUSEL END-->
+				
 
 				<div class="paragrafo-testo">
 						<p>Una serie di ombrelli decorati con temi di caccia vengono commissionati per conto della rivista Esquire - Edizione italiana, che li utilizza per un servizio fotografico a corredo di un proprio articolo di stile e moda.</p>
 				</div>
-				<div class="tre-immagini">
-					<img src="img/sample/immagine_quadrata1.jpg">
-					<img src="img/sample/immagine_quadrata2.jpg">
-					<img src="img/sample/immagine_quadrata3.jpg">
-				</div>
-
-
-				<div class="banner1"></div>
-				<div class="post-banner"></div>
+				
+				<div class="parallax-inpage" data-parallax="scroll" data-image-src="img/parallax/dipinto-olio-tela-fiori-tulipani-parallax-large.jpg"></div>
+				<div class="segnaposto-parallax"></div>
 
 				<div class="paragrafo-testo">
 					<h3>Tecnica e stile</h3>
@@ -154,16 +93,9 @@
 				</div>
 
 
-				<div class="sei-immagini">
-					<img src="img/sample/immagine_quadrata1.jpg" class="prima-immagine"><!--
-					--><img src="img/sample/immagine_quadrata2.jpg"><!--
-					--><img src="img/sample/immagine_quadrata3.jpg"><!--
-					--><img src="img/sample/immagine_quadrata1.jpg"><!--
-					--><img src="img/sample/immagine_quadrata2.jpg"><!--
-					--><img src="img/sample/immagine_quadrata3.jpg" class="ultima-immagine">
-				</div>
+				
 
-				<img onclick="ScrollToTopFunction()" id="scrollToTopBtn" src="img/template/scroll-to-top.png">
+				<img onclick="ScrollToTopFunction()" id="scrollToTopBtn" src="img/template/scroll-page-trasp.png">
 			</div>
 
 		</div>
@@ -182,22 +114,20 @@
 
 
 
+<!--</div><!--page-->
 <!--INCLUSIONE JAVASCRIPT DEDICATI ED ESTERNI-->
-	    <script src="js/jquery-1.7.1.min.js"></script>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
+		<script src="js/jquery-1.7.1.min.js"></script> 
+		<script src="js/parallax.js"></script>
 	    <script src="js/rolando.js"></script>
+
+
 
 <!--CHIAMATA FUNZIONI DA ATTIVARE ALLO SCORRIMENTO PAGINA-->
 	<script>
 	document.onscroll = function() {
-		    		
 					displayToTopBtn();
-		    		//MOSTRO IL MENU SOTTILE SOLO SE LO SCHERMO é PICCOLO
-		    		if ($(window).scrollTop()> 192 && $(window).width() <= 660) {
-		    			//console.log('Devo mostrare menu fisso');
-		    			document.getElementById('header-2').style.display = 'block';
-		    		} else {
-		    			document.getElementById('header-2').style.display = 'none';	
-		    		};
 		    	}
 	</script>
 
