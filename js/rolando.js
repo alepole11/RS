@@ -2,7 +2,8 @@
 
 
 window.onload = function() 
-  { document.getElementById("hideAll").style.opacity = '0'; }
+  { document.getElementById("hideAll").style.opacity = '0'; 
+	document.getElementById("hideAll").style.display = 'none';}
 
 
 //MOSTRA IL PULSATE TO TOP
