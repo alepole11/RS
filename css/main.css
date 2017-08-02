@@ -625,7 +625,7 @@ IMAGE ELEMENTS
 		.w3-col.l5{width:41.66666%}.w3-col.l6{width:49.99999%}.w3-col.l7{width:58.33333%}.w3-col.l8{width:66.66666%}
 		.w3-col.l9{width:74.99999%}.w3-col.l10{width:83.33333%}.w3-col.l11{width:91.66666%}.w3-col.l12{width:99.99999%}}
 
-		.w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+		.w3-opacity,.w3-hover-opacity:hover{opacity:0.3}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
 		.w3-opacity-max{opacity:0.25}.w3-opacity-min{opacity:0.75}
 
 		.w3-hover-opacity-off:hover{opacity:1}
