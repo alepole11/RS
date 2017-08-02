@@ -591,7 +591,7 @@ IMAGE ELEMENTS
 	
 
 		.w3-col{
-			padding:0 8px;
+			padding:8px 8px;
 		}
 
 		/*.sinistra{
@@ -609,7 +609,7 @@ IMAGE ELEMENTS
 
 		/*.w3-row-padding:after,.w3-row-padding:before{content:"";display:table;clear:both}*/
 
-		.w3-section{margin-top:16px!important;margin-bottom:16px!important; 
+		.w3-section{margin-top:8px!important;margin-bottom:8px!important; 
 			}
 
 		.w3-col{float:left;width:100%; }
