@@ -1,66 +1,67 @@
 /******************************************
-HEADER
+HEADER - ALL OTHER PAGES
 *******************************************/
 
 	header {
-		background-color: #fff;
-		background-image: url("../img/template/header-desktop-xl.jpg");
-		background-repeat: no-repeat;
-
-		/*background-color: #651D36;*/
+		background-color: #651D36;
+		opacity: 1;
+		/*background-image: url("../img/template/header-desktop-xl.jpg");
+		background-repeat: no-repeat;*/
 		/*filter: grayscale(50%);*/
-		height: 289px;
+		height: 100px;
 		margin: 0 0 0 0;  /*margine esterno al blocco*/
 		/*padding: 5px 0 5px 0;  /*margine interno al blocco*/
 		padding: 0 0;
 		/*overflow: auto; /*per evitare che sparisca con il logo a sinistra -- poi tolto per menu a tendina*/
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    z-index: 10;
 	}
 
 	#logo {
-		text-align: center;
-		display: inline-block;
-		width: 100%;
+		text-align: left; /*center*/
+		display: inline;
+		/*width: 100%;*/
 	}
 
 	h1 {
 		color: #fff;
 		font-family: 'Bilbo Swash Caps', cursive;
-		margin: 50px 0 -10px 0;
-		font-size: 8.0em;
+		/*margin: 50px 0 -10px 0;*/
+		margin: 10px 0 0 10px;
+		font-size: 3.0em;  /*8.0*/
 		font-weight: normal;
     	text-shadow: 4px 4px 4px #651D36;
 	}
 
-	header h2 {
-		color: #000;
-		font-family: "Arial Narrow", Arial, sans-serif;
-		/*margin: 15px 0 20px 0;*/
-		margin: 0;
-		font-size: 1.5em;
-		font-weight: normal;
-	}
-
 	.container-icona-menu{
-		width: 100%;
+		/*width: 100%;*/
+		display: inline;
+		float: left;
+		margin-left: 20px;
+		margin-top: 14px;
+		margin-right: 20px;
 	}
 
 	.icona-menu{
 		cursor: pointer;
-		width: 48px;
+		width: 40px;
 		z-index: 20;
 		position: relative;
 		margin-left: 2%;
 	}
 
 /******************************************
-NAV
+NAV - ALL OTHER PAGES
 *******************************************/
 
-	.main-menu {
+	.main-menu{
+		display: none;
+		position: fixed;
+		top: 70px;
 		background-color: #651D36;
 		text-align: center;
-		position: absolute;
-		display: block;     /*none*/
 		padding: 0;
 		width: 100%;
 		z-index: 10;
@@ -89,7 +90,7 @@ NAV
 	    color: black;
 	}
 
-/**/
+	/**/
 
 	.sub-menu{
 		display: block;
@@ -124,48 +125,47 @@ NAV
 		font-size: bold;
 	}
 
-
 /***********************************************************************************************************************
 ************************************************** VERSIONE SMARTPHONE *************************************************
 ***********************************************************************************************************************/
 
 @media screen and (min-width: 250px) and (max-width: 660px){
 
-/******************************************
+	/******************************************
 	HEADER
 	*******************************************/
 
 		header {
-			background-image: url("../img/template/header-mobile.jpg");
-			background-repeat: no-repeat;
-			height: 192px;
+			height: 50px;
 		}
 
 		h1{
-			font-size: 4.2em;
-			margin-top: 30px;
-		}
-
-		header h2{
-			font-size: 1.2em; 
+			font-size: 2.0em;
+			text-align: center;
 		}
 
 		.container-icona-menu{
-			text-align: center;
-			padding-top: 10px;
+			position: absolute;
+			margin-top: 8px;
+			margin-left: 8px;
 		}
 
 		.icona-menu{
 			width: 35px;
-			z-index: 10;
-			/*position: relative;*/
-			margin-left: 0;
-			text-align: center;
 		}
 
+		
 	/******************************************
 	NAV
 	*******************************************/
+
+		.main-menu{
+			top: 50px;
+			padding: 5px 0;
+			/*border-top: solid;
+			border-top-width: 1px;
+			border-top-color: #ffffff;*/
+		}
 
 		.voci-menu{
 			display: block;
@@ -192,5 +192,5 @@ NAV
 			top: -46px;
 			margin-bottom: -46px;
 		}
-
+		
 }
