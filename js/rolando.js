@@ -206,7 +206,11 @@ function showSlides2(n) {
 //OTHER SLIDESHOW
 
 var slideIndex2 = 1;
-showDivs(slideIndex2);
+try{
+	showDivs(slideIndex2);}
+catch(e){
+	console.log('Salto showDivs')
+}
 
 function plusDivs(n) {
   showDivs(slideIndex2 += n);

@@ -17,7 +17,9 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Fondamentale per il rendering sugli schermi!!!-->
 	</head>
-	<body class="homepage">
+	<body>
+	<div  id="hideAll"><div id="loader"></div></div>
+	<!--<div id="page"><!--DA IMPLEMENTARE: apparizione pagina in transizione dopo il loader; capire come mai i parallax stanno fuori-->
 		<div class="container">
 			<header class="clearfix">
 				<!--<div id="container-titolo">-->
@@ -45,9 +47,9 @@
 						</div>
 
 					</div>
-					<a href="index.html">BIOGRAFIA</a> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
+					<a href="#anchor-biografia">BIOGRAFIA</a> <!--aggiungi class="selected" per avere il link evidenziato sulla pagina attiva-->
 					<a href="#">ESPOSIZIONI</a>
-					<a href="index.html">CONTATTI</a>
+					<a href="#anchor-info">CONTATTI</a>
 				</div>
 			</nav>
 
@@ -117,15 +119,11 @@
 				</section>
 
 				<!--Parallax-->
-				<div class="banner1"></div>
-				<div class="post-banner"></div>
-
-				<div class="parallax-container" data-parallax="scroll" data-image-src="img/parallax/parallax1.jpg">
-					
-				</div>
+				<<div class="parallax-inpage" data-parallax="scroll" data-image-src="img/parallax/dipinto-olio-tela-fiori-tulipani-parallax-large.jpg"></div>
+				<div class="segnaposto-parallax"></div>
 
 
-				<section id=biografia>
+				<section id=biografia class="paragrafo-testo">
 						<a name="anchor-biografia"></a>
 						<img src="img/profilo-biografia-artista.png" alt="Foto profilo dell'artista Rolando Scaccabarozzi" class=foto-profilo>
 						<h3>Biografia</h3>
@@ -160,9 +158,8 @@
 						
 					</section>
 
-				<!--Parallax-->
-				<div class="banner2"></div>
-				<div class="post-banner"></div>
+				<div class="parallax-inpage" data-parallax="scroll" data-image-src="img/parallax/dipinto-olio-tela-fiori-tulipani-parallax-large.jpg"></div>
+				<div class="segnaposto-parallax"></div>
 
 				<section id=container-contatti>
 					<div class="info-contatti clearfix">
@@ -207,6 +204,7 @@
 					</div>
 				</footer>
 
+	<!--</div><!--page-->
 <!--CHIAMATA FUNZIONI DA ATTIVARE ALLO SCORRIMENTO PAGINA-->
 	<script>
 	document.onscroll = function() {

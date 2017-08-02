@@ -82,7 +82,7 @@ GENERAL
 		    background-color: white;
 		    z-index: 99; /* Higher than anything else in the document */
 		    opacity: 1;
-		    -webkit-transition: opacity 0.5s linear;*/
+		    -webkit-transition: opacity 0s linear;*/
 		}
 
 		#loader {
