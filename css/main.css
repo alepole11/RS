@@ -195,6 +195,45 @@ SECTION ELEMENTS
 	HOME PORTFOLIO LINKS NEW
 	*******************************************/
 
+		.parallax-home{
+			width: 100%;
+			text-align: center;
+			position: relative;
+			margin-top: 20px;
+			left: 0;
+			right: 0;
+			height: 400px;
+			text-align: center;
+		}
+
+		.segnaposto-parallax{
+			position: relative;
+			height: 440px;
+		}
+
+		
+		.parallax-home .banner-caption{
+			/*height: 80px;*/
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			/*top: 300px;*/
+			/*padding-top: 25px;*/
+		}
+
+		.parallax-home .banner-caption .caption-text{
+		    color: #fff;
+		    padding: 0;
+		    font-size: 50px;
+		    letter-spacing: 2px;
+		    text-transform: uppercase;
+		    font-weight: normal;
+		}
+
+
+
+
+
 		.portfolio{
 			background-color: grey;
 		}
