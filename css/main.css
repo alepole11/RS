@@ -38,7 +38,7 @@ GENERAL
 	}
 
 	.container { /*sticky footer in fondo alla pagina (questo è buono se il footer ha dimensione fissa*/
-		min-height: calc(100vh - 201px);
+		min-height: calc(100vh - 120px);
 	}
 
 	.show{display:block!important} /*classe per mostrare il menu con javascript al click dell'icona*/
@@ -777,9 +777,11 @@ FOOTER
 		text-align: center;
 		clear: both; /*per avere pulito destra e sinistra, quindi resta sotto tutto*/
 		padding: 0 0 0 0;
-		background-image: url("../img/template/footer-desktop-xl.jpg");
+		/*background-image: url("../img/template/footer-desktop-xl.jpg");
 		background-repeat: no-repeat;
-		height: 201px;
+		height: 201px;*/
+		height: 120px;
+		background-color: #651D36;
 	}
 
 	footer p{
@@ -788,7 +790,7 @@ FOOTER
 	}
 
 	.social-copyright{
-		padding-top: 60px;
+		padding-top: 20px;
 	}
 
 	.icona-social{

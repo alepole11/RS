@@ -4,7 +4,7 @@ HEADER
 
 	header {
 		background-color: #fff;
-		background-image: url("../img/template/header-desktop-xl.jpg");
+		/*background-image: url("../img/template/header-desktop-xl.jpg");
 		background-repeat: no-repeat;
 
 		/*background-color: #651D36;*/
@@ -25,10 +25,10 @@ HEADER
 	h1 {
 		color: #fff;
 		font-family: 'Bilbo Swash Caps', cursive;
-		margin: 50px 0 -10px 0;
+		margin: 40px 0 -10px 0;
 		font-size: 8.0em;
 		font-weight: normal;
-    	text-shadow: 4px 4px 4px #651D36;
+    	text-shadow: 4px 4px 4px #000;
 	}
 
 	header h2 {
@@ -42,7 +42,8 @@ HEADER
 
 	.container-icona-menu{
 		width: 100%;
-		visibility: hidden;
+		text-align: center;
+		/*visibility: hidden;*/
 	}
 
 	.icona-menu{
@@ -50,7 +51,8 @@ HEADER
 		width: 48px;
 		z-index: 20;
 		position: relative;
-		margin-left: 2%;
+		top: 20px;
+		/*margin-left: 2%;*/
 	}
 
 	/*.riga-home{
@@ -72,7 +74,7 @@ NAV
 		background-color: #651D36;
 		text-align: center;
 		position: absolute;
-		display: block;     /*none*/
+		display: none;     /*none*/
 		padding: 0;
 		width: 100%;
 		z-index: 10;

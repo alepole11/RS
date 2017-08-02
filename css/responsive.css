@@ -181,13 +181,15 @@
 	*******************************************/
 
 		footer{
-			background-image: url("../img/template/footer-mobile.jpg");
+			/*background-image: url("../img/template/footer-mobile.jpg");
 			background-repeat: no-repeat;
-			height: 136px;
+			height: 136px;*/
+			height: 110px;
+			background-color: #651D36;
 		}
 
 		.social-copyright{
-			padding-top: 30px;
+			padding-top: 25px;
 		}
 
 		.icona-social{
@@ -239,9 +241,7 @@
 	FOOTER
 	*******************************************/
 
-		.social-copyright{
-			padding-top: 50px;
-		}
+
 
 }
 
