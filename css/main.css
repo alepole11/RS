@@ -211,6 +211,14 @@ SECTION ELEMENTS
 			height: 200px;
 			text-align: center;
 		}
+
+		.parallax-home .campitura{
+			position: absolute;
+			background-color: #000;
+			width: 100%;
+			height: 200px;
+			opacity: 0.3;
+		}
 		
 		.parallax-home .banner-caption{
 			/*height: 80px;*/
