@@ -53,16 +53,16 @@ HEADER
 		margin-left: 2%;
 	}
 
-	.riga-home{
+	/*.riga-home{
 		background-color: #651D36;
 		text-align: center;
 		position: absolute;
-		display: block;     /*none*/
+		display: block;    
 		padding: 0;
 		width: 100%;
 		z-index: 10;
 		height: 5px;
-	}
+	}*/
 
 /******************************************
 NAV
@@ -148,14 +148,17 @@ NAV
 	*******************************************/
 
 		header {
-			background-image: url("../img/template/header-mobile.jpg");
-			background-repeat: no-repeat;
+			background-color: #fff;
+			background-image: none;
+			/*background-image: url("../img/template/header-mobile.jpg");
+			background-repeat: no-repeat;*/
 			height: 192px;
 		}
 
 		h1{
 			font-size: 4.2em;
 			margin-top: 30px;
+			text-shadow: 4px 4px 3px #651D36;
 		}
 
 		header h2{
