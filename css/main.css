@@ -192,6 +192,30 @@ SECTION ELEMENTS
 		}
 
 	/******************************************
+	HOME PORTFOLIO LINKS NEW
+	*******************************************/
+
+		.portfolio{
+			background-color: grey;
+		}
+
+		.portfolio-image{
+			height: 300px;
+			margin-bottom: 10px;
+
+		}
+		
+		.portfolio a{
+			display: block;
+			color: #fff;
+			text-align: center;
+			position: relative;
+			margin-bottom: 50px;
+		}
+
+
+
+	/******************************************
 	CITAZIONE
 	*******************************************/
 
