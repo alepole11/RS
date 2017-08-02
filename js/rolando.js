@@ -1,6 +1,9 @@
 //CODICI JAVASCRIPT UTILIZZATI DA www.rolandoscaccabarozzi.it
 
 
+window.onload = function() 
+  { document.getElementById("hideAll").style.opacity = '0'; }
+
 
 //MOSTRA IL PULSATE TO TOP
 			// When the user scrolls down 20px from the top of the document, show the button
