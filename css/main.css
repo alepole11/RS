@@ -250,16 +250,7 @@ IMAGE ELEMENTS
 *******************************************/
 
 	/******************************************
-	BANNER
-	*******************************************/
-
-	.parallax-container {
-		  height: 500px;
-		  width: 100%;
-		}
-
-	/******************************************
-	BANNER
+	PARALLAX TOP PAGE
 	*******************************************/
 
 		.banner1{
@@ -273,23 +264,6 @@ IMAGE ELEMENTS
 			height: 100%;
 			text-align: center;
 		}
-
-		/*.banner1{
-			width: 100%;
-			text-align: center;
-			background-image: url(../img/parallax/parallax1.jpg);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-attachment: fixed;
-			position: relative;
-			margin:0;
-			top:0;
-			left: 0;
-			right: 0;
-			height: 100%;
-			text-align: center;
-		}*/
 
 		.banner1 .campitura1{
 			background-color: #000;
@@ -336,6 +310,29 @@ IMAGE ELEMENTS
 		    0%   {top: 65%;}
 		    100%  {top: 85%;}
 		}
+
+	/******************************************
+	PARALLAX INPAGE
+	*******************************************/
+
+		.parallax-inpage{
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			margin-top: 40px;
+			left: 0;
+			right: 0;
+			height: 400px;
+			text-align: center;
+			z-index: 20;
+		}
+
+		.segnaposto-parallax{
+			position: relative;
+			height: 440px;
+		}
+
+
 
 	/******************************************
 	CAROUSEL
@@ -671,27 +668,6 @@ IMAGE ELEMENTS
 		.tre-immagini .ultima-immagine{
 			margin-right: 0;
 		}
-
-	/******************************************
-	COVER FLOW
-	*******************************************/
-
-		#preview{
-			position: relative;
-			margin: 40px auto 40px auto;
-			width: 80%;
-			z-index: 3;
-		}
-
-		#preview-coverflow .cover {
-			cursor:		pointer;
-			width: 320px;
-
-			/*width:		320px;
-			height:		240px;
-			/*box-shadow:	0 0 4em 1em white;  effetto sparaflashoso*/
-		}
-
 
 /******************************************
 FOOTER
