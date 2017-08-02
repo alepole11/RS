@@ -109,7 +109,37 @@
 			.banner1 .banner-caption .caption-text{
 			    font-size: 30px;
 			    letter-spacing: 2px;
-			}						
+			}	
+
+		/******************************************
+		CAROUSEL 2 - PIU STRETTO E ALTO
+		*******************************************/	
+
+			.slideshow-container2{
+				width: 70%;
+			}
+
+			.prev2-box{
+				margin-top: -17px;
+				width: 15%;
+			}
+
+			.prev2{
+				height: 35px;
+				width: 35px;
+				margin-right: -17px;
+			}	
+
+			.next2-box{
+				margin-top: -17px;
+				width: 15%;
+			}
+
+			.next2{
+				height: 35px;
+				width: 35px;
+				margin-left: -17px;
+			}			
 
 		/******************************************
 		RIGA DI IMMAGINI ORIZZONTALE
