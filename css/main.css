@@ -579,12 +579,14 @@ IMAGE ELEMENTS
 		
 
 	/******************************************
-	BOX IMMAGINE CON MINIATURE SOTTO
+	BOX IMMAGINE CON MINIATURE SOTTO (OTHER)
 	*******************************************/
 
 		.w3-content{max-width:980px;margin:auto}/*.w3-rest{overflow:hidden}*/
 
 		/*.w3-row-padding,/*.w3-row-padding>.w3-col{padding:0 8px}*/
+
+
 
 	
 
@@ -607,9 +609,11 @@ IMAGE ELEMENTS
 
 		/*.w3-row-padding:after,.w3-row-padding:before{content:"";display:table;clear:both}*/
 
-		.w3-section{margin-top:16px!important;margin-bottom:16px!important}
+		.w3-section{margin-top:16px!important;margin-bottom:16px!important; 
+			}
 
-		.w3-col{float:left;width:100%}
+		.w3-col{float:left;width:100%; }
+
 		.w3-col.s1{width:8.33333%}.w3-col.s2{width:16.66666%}.w3-col.s3{width:24.99999%}.w3-col.s4{width:33.33333%}
 		.w3-col.s5{width:41.66666%}.w3-col.s6{width:49.99999%}.w3-col.s7{width:58.33333%}.w3-col.s8{width:66.66666%}
 		.w3-col.s9{width:74.99999%}.w3-col.s10{width:83.33333%}.w3-col.s11{width:91.66666%}.w3-col.s12{width:99.99999%}
