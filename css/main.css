@@ -753,6 +753,34 @@ IMAGE ELEMENTS
 			margin-left: 0.5%;
 		}
 
+		/*1 immagine verticale a sinistra e 2 immagini orizzontali a destra*/
+		.mosaico1vs2od{
+			margin-top: 40px;  /*????*/
+			position: relative;
+			width: 100%;
+		}
+
+		.mos1vs{
+			position: relative;
+			display: inline-block;
+			width: 33.3333333333333%;
+			float: left;
+			margin-right: 0.5%;
+			margin-bottom: 0;
+		}
+
+		.mos2od{
+			position: relative;
+			display: inline-block;
+			float: right;
+			width: 65.6666666666667%;
+			margin-left: 0.5%;
+		}
+
+		.mos2od img{
+			margin-bottom: 1%;
+		}
+
 	/******************************************
 	RIGA DI IMMAGINI ORIZZONTALE
 	*******************************************/
