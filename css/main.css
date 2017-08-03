@@ -733,6 +733,77 @@ IMAGE ELEMENTS
 	RIGA DI IMMAGINI ORIZZONTALE
 	*******************************************/
 
+		.una-immagine{
+			margin:0;
+			padding: 0;
+		}
+
+		.una-immagine img{
+			width: 100%;
+		}
+
+		/*******************/
+
+		.due-immagini{
+			margin:0;
+			padding: 0;
+		}
+
+		.due-immagini img{
+			width: 49.5%;
+			margin: 0.5%;
+		}
+
+		.due-immagini .prima-immagine{
+			margin-left: 0;
+		}
+
+		.due-immagini .ultima-immagine{
+			margin-right: 0;
+		}
+
+		/*******************/
+
+		.tre-immagini{
+			margin:0;
+			padding: 0;
+		}
+
+		.tre-immagini img{
+			width: 32.66666666666666667%;
+			margin: 0.5%;
+		}
+
+		.tre-immagini .prima-immagine{
+			margin-left: 0;
+		}
+
+		.tre-immagini .ultima-immagine{
+			margin-right: 0;
+		}
+
+		/*******************/
+
+		.quattro-immagini{
+			margin: 0;
+			padding: 0;
+		}
+
+		.quattro-immagini img{
+			width: 24.25%;
+			margin: 0.5%;
+		}
+
+		.quattro-immagini .prima-immagine{
+			margin-left: 0;
+		}
+
+		.quattro-immagini .ultima-immagine{
+			margin-right: 0;
+		}
+
+		/*******************/
+
 		.sei-immagini{
 			margin: 0;
 			padding: 0;
@@ -748,24 +819,6 @@ IMAGE ELEMENTS
 		}
 
 		.sei-immagini .ultima-immagine{
-			margin-right: 0;
-		}
-
-		.tre-immagini{
-			margin:0;
-			padding: 
-		}
-
-		.tre-immagini img{
-			width: 32.66666666666666667%;
-			margin: 0.5%;
-		}
-
-		.tre-immagini .prima-immagine{
-			margin-left: 0;
-		}
-
-		.tre-immagini .ultima-immagine{
 			margin-right: 0;
 		}
 
