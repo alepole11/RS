@@ -678,7 +678,9 @@ IMAGE ELEMENTS
 	BOX IMMAGINE CON MINIATURE SOTTO (OTHER)
 	*******************************************/
 
-		.w3-content{max-width:980px;margin:auto}/*.w3-rest{overflow:hidden}*/
+		.w3-content{max-width:980px;
+			margin-bottom: 0px;
+			}/*.w3-rest{overflow:hidden}*/
 
 		/*.w3-row-padding,/*.w3-row-padding>.w3-col{padding:0 8px}*/
 
