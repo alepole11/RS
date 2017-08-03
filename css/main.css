@@ -682,10 +682,6 @@ IMAGE ELEMENTS
 
 		/*.w3-row-padding,/*.w3-row-padding>.w3-col{padding:0 8px}*/
 
-
-
-	
-
 		.w3-col{
 			padding:8px 8px;
 		}
@@ -732,7 +728,29 @@ IMAGE ELEMENTS
 
 		/*2 immagini orizzontali a sinistra e 1 verticale a destra*/
 		.mosaico2os1vd{
-			background-color: grey;
+			margin-top: 40px;  /*????*/
+			position: relative;
+			width: 100%;
+		}
+
+		.mos2os{
+			position: relative;
+			display: inline-block;
+			width: 65.6666666666667%;
+			float: left;
+			margin-right: 0.5%;
+			margin-bottom: 0;
+		}
+		.mos2os img{
+			margin-bottom: 1%;
+		}
+
+		.mos1vd{
+			position: relative;
+			display: inline-block;
+			float: right;
+			width: 33.3333333333333%;
+			margin-left: 0.5%;
 		}
 
 	/******************************************
