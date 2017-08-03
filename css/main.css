@@ -726,8 +726,14 @@ IMAGE ELEMENTS
 
 		.w3-hover-opacity-off:hover{opacity:1}
 
+	/******************************************
+	MOSAICI
+	*******************************************/
 
-
+		/*2 immagini orizzontali a sinistra e 1 verticale a destra*/
+		.mosaico2os1vd{
+			background-color: grey;
+		}
 
 	/******************************************
 	RIGA DI IMMAGINI ORIZZONTALE
