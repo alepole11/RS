@@ -670,10 +670,6 @@ IMAGE ELEMENTS
 		  animation-duration: 1.5s;
 		}
 
-	
-
-		
-
 	/******************************************
 	BOX IMMAGINE CON MINIATURE SOTTO (OTHER)
 	*******************************************/
@@ -730,9 +726,9 @@ IMAGE ELEMENTS
 
 		/*2 immagini orizzontali a sinistra e 1 verticale a destra*/
 		.mosaico2os1vd{
-			margin-top: 40px;  /*????*/
 			position: relative;
 			width: 100%;
+			margin: 0;
 		}
 
 		.mos2os{
@@ -757,15 +753,15 @@ IMAGE ELEMENTS
 
 		/*1 immagine verticale a sinistra e 2 immagini orizzontali a destra*/
 		.mosaico1vs2od{
-			margin-top: 40px;  /*????*/
 			position: relative;
 			width: 100%;
+			margin: 0;
 		}
 
 		.mos1vs{
 			position: relative;
 			display: inline-block;
-			width: 33.3333333333333%;
+			width: 32.66666666666666667%;/*33.3333333333333%;*/
 			float: left;
 			margin-right: 0.5%;
 			margin-bottom: 0;
@@ -775,7 +771,7 @@ IMAGE ELEMENTS
 			position: relative;
 			display: inline-block;
 			float: right;
-			width: 65.6666666666667%;
+			width: 66.33333333333333334%;/*65.6666666666667%;*/
 			margin-left: 0.5%;
 		}
 
