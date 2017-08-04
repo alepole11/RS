@@ -270,6 +270,19 @@ SECTION ELEMENTS
 			border-radius: 100%; /*per avere bordi smussati.. al 100% viene un cerchio*/
 		}
 
+		#espandi-testo{
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		#espandi-testo:hover{
+			color:#651D36;
+		}
+
+		#full-bio{
+			display: none;
+		}
+
 	/******************************************
 	CONTATTI
 	*******************************************/
