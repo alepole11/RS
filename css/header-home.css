@@ -81,17 +81,25 @@ NAV
 	}
 
 	.voci-menu{
+		position: relative;
 		display: inline-block;
-		min-width:420px;
+	}
+
+	.sub-menu{
+		float: left;
+		display: inline-block;
+	}
+
+	.top-menu{
+		float: right;
+		display: inline-block;
 	}
 
 	/**/
 
 	.main-menu a {
-	    float: left;
-	    display: inline-block;
+		display: inline-block;
 	    color: #f2f2f2;
-	    text-align: center;
 	    padding: 15px 16px;
 	    text-decoration: none;
 	    font-size: 17px;
@@ -103,12 +111,7 @@ NAV
 	    color: black;
 	}
 
-/**/
-
-	.sub-menu{
-		display: block;
-		margin-right: 1%;
-	}
+	/**/
 
 	.parent-menu{
 		cursor: pointer;
@@ -197,15 +200,20 @@ NAV
 			margin-top: -5px;
 		}
 
+		.sub-menu {
+			display: block;
+			width: 100%;
+		}
+
+		.top-menu{
+			display: block;
+			width: 100%;
+		}
+
 		.main-menu a {
 			float: none;
 		    display: block;
 		    width: 100%;
-		}
-
-		.sub-menu {
-			display: block;
-			width: 100%;
 		}
 
 		.child-menu{
