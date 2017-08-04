@@ -169,7 +169,7 @@ function showSlides(n) {
 };
 
 
-//CAROUSEL 2
+//CAROUSEL 2 (PIU STRETTO)
 
 var slideIndex = 1;
 try{
@@ -200,6 +200,39 @@ function showSlides2(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active2";
+}
+
+//CAROUSEL 3 (CLONE PIU STRETTO)
+
+var slideIndex = 1;
+try{
+	showSlides3(slideIndex);}
+catch(e){
+	console.log('Salto showSlides3')
+}
+
+function plusSlides3(n) {
+  showSlides3(slideIndex += n);
+}
+
+function currentSlide3(n) {
+  showSlides3(slideIndex = n);
+}
+
+function showSlides3(n) {
+  var i;
+  var slides = document.getElementsByClassName("myCarousel3");
+  var dots = document.getElementsByClassName("dot3");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
 }
 
 
