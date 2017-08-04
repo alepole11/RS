@@ -219,8 +219,7 @@ NAV
 		.child-menu{
 			position: relative;
 			width: 100%;
-			top: -46px;
-			margin-bottom: -46px;
+			top: 0px;
 		}
 
 }

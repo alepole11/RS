@@ -189,11 +189,15 @@ NAV - ALL OTHER PAGES
 			width: 100%;
 		}
 
+		.top-menu{
+			display: block;
+			width: 100%;
+		}
+
 		.child-menu{
 			position: relative;
 			width: 100%;
-			top: -46px;
-			margin-bottom: -46px;
+			top: 0px;
 		}
 		
 }
