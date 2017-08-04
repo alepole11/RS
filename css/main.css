@@ -271,6 +271,7 @@ SECTION ELEMENTS
 		}
 
 		#espandi-testo{
+			display: block;
 			cursor: pointer;
 			text-decoration: underline;
 		}
