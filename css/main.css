@@ -574,6 +574,11 @@ IMAGE ELEMENTS
 	CAROUSEL 2 - PIU STRETTO E ALTO
 	*******************************************/
 
+		.slideshow2-box{/*contenitore esterno per mettere sfondo uniforme*/
+			background-color: #fafafa; 
+			padding-bottom: 20px;
+		}
+
 		/* Slideshow container */
 		.slideshow2{
 			
