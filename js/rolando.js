@@ -32,6 +32,55 @@ window.onload = function()
 					}, 1000);
 			}
 
+// MOSTRO TOP MENU SE LA PAGINA SCORRE VERSO L'ALTO
+
+
+      $('document').ready(function displayTopMenu() {
+          var lastScrollTop = 0;
+          $(window).scroll(function(event){
+                t =  document.getElementById("testata");
+               var st = $(this).scrollTop();
+
+               if ($(window).scrollTop()> 50 && $(window).width() <= 660) {
+
+               if (st > lastScrollTop){
+                   console.log("down");
+                    
+                    //document.getElementById("testata").style.visibility = "hidden";
+                      console.log("classi prima", t.classList);
+                      t.className = "clearfix menu-va-su";
+                      console.log("classi dopo", t.classList);
+                      document.getElementById("testata").style.top = '-50px';
+                    
+               }
+               else if(st == lastScrollTop)
+               {
+                 //do nothing 
+                 //In IE this is an important condition because there seems to be some instances where the last scrollTop is equal to the new one
+               }
+               else {
+                  console.log("up");
+                  //document.getElementById("testata").style.visibility = "visible";
+                  console.log("classi prima", t.classList);
+                  t.className = "clearfix menu-vien-giu";
+                  console.log("classi dopo", t.classList);
+                  document.getElementById("testata").style.top = '0px';
+
+               }
+
+             }
+
+               lastScrollTop = st;
+            });
+      });
+  
+/*
+elemento..className += " active";     aggiunge classe
+elemento.className.replace(" active", "");        toglie
+
+*/
+
+
 
 //ANIMAZIONE SU CLICK PULSANTE MENU
 	    	$(document).ready(function(){   
