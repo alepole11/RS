@@ -80,11 +80,6 @@ NAV
 		z-index: 10;
 	}
 
-	.voci-menu{
-		position: relative;
-		display: inline-block;
-	}
-
 	.sub-menu{
 		float: left;
 		display: inline-block;
@@ -92,6 +87,11 @@ NAV
 
 	.top-menu{
 		float: right;
+		display: inline-block;
+	}
+
+	.voci-menu{
+		position: relative;
 		display: inline-block;
 	}
 

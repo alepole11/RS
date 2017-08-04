@@ -67,18 +67,26 @@ NAV - ALL OTHER PAGES
 		z-index: 10;
 	}
 
-	.voci-menu{
+	.sub-menu{
+		float: left;
 		display: inline-block;
-		min-width:420px;
+	}
+
+	.top-menu{
+		float: right;
+		display: inline-block;
+	}
+
+	.voci-menu{
+		position: relative;
+		display: inline-block;
 	}
 
 	/**/
 
 	.main-menu a {
-	    float: left;
 	    display: inline-block;
 	    color: #f2f2f2;
-	    text-align: center;
 	    padding: 15px 16px;
 	    text-decoration: none;
 	    font-size: 17px;
@@ -92,11 +100,6 @@ NAV - ALL OTHER PAGES
 
 	/**/
 
-	.sub-menu{
-		display: block;
-		margin-right: 1%;
-	}
-
 	.parent-menu{
 		cursor: pointer;
 	}
@@ -105,7 +108,7 @@ NAV - ALL OTHER PAGES
 		display: none;
 		background-color: #bfbfbf;
 		position: absolute;
-		margin-top: 49px;
+		margin-top: 3px;
 		width: 180px;
 	}
 
