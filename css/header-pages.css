@@ -57,9 +57,9 @@ NAV - ALL OTHER PAGES
 *******************************************/
 
 	.main-menu{
-		display: none;
 		position: fixed;
 		top: 70px;
+		display: none;
 		background-color: #651D36;
 		text-align: center;
 		padding: 0;
@@ -164,7 +164,7 @@ NAV - ALL OTHER PAGES
 
 		.main-menu{
 			top: 50px;
-			padding: 5px 0;
+			padding: 7px 0;
 			/*border-top: solid;
 			border-top-width: 1px;
 			border-top-color: #ffffff;*/
