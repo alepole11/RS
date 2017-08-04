@@ -34,8 +34,9 @@ window.onload = function()
 
 // MOSTRO TOP MENU SE LA PAGINA SCORRE VERSO L'ALTO
 
-
-      $('document').ready(function displayTopMenu() {
+/*
+      $('document').ready(
+        function displayTopMenu() {
           var lastScrollTop = 0;
           $(window).scroll(function(event){
                 t =  document.getElementById("testata");
@@ -73,7 +74,7 @@ window.onload = function()
                lastScrollTop = st;
             });
       });
-  
+  */
 /*
 elemento..className += " active";     aggiunge classe
 elemento.className.replace(" active", "");        toglie

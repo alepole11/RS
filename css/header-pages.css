@@ -2,33 +2,25 @@
 HEADER - ALL OTHER PAGES
 *******************************************/
 
-		@keyframes mostra-menu {
-		    from {top: -50px;}
-		    to {top: 0;}
-		}
+	@keyframes mostra-menu {
+	    from {top: -50px;}
+	    to {top: 0;}
+	}
 
-		.menu-vien-giu{
-			animation-name: mostra-menu;
-    		animation-duration: 0.5s;
-		}
+	.menu-vien-giu{
+		animation-name: mostra-menu;
+		animation-duration: 0.5s;
+	}
 
-		@keyframes nascondi-menu {
-		    from {top: 0;}
-		    to {top: -50px;}
-		}
+	@keyframes nascondi-menu {
+	    from {top: 0;}
+	    to {top: -50px;}
+	}
 
-		.menu-va-su{
-			animation-name: nascondi-menu;
-    		animation-duration: 1s;
-		}
-
-
-
-
-
-
-
-
+	.menu-va-su{
+		animation-name: nascondi-menu;
+		animation-duration: 1s;
+	}
 
 	header {
 		background-color: #651D36;
