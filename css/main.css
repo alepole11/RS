@@ -271,16 +271,6 @@ SECTION ELEMENTS
 		}
 
 		#espandi-testo{
-			display: block;
-			cursor: pointer;
-			text-decoration: underline;
-		}
-
-		#espandi-testo:hover{
-			color:#651D36;
-		}
-
-		#full-bio{
 			display: none;
 		}
 
