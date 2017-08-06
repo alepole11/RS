@@ -114,8 +114,6 @@
 			#full-bio{
 				display: none;
 				margin-top: -20px;
-				opacity: 0;
-				-webkit-transition: opacity 1s linear;
 			}
 
 		/******************************************
